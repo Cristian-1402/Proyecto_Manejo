@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -22,7 +22,11 @@
         <link href="css/footer.css" rel="stylesheet" />
     </head>
     <body>
-        <!-- Navigation-->
+
+        <!-- ======================================================== -->
+        <!-- INICIO SECCIÓN CRISTIAN - HEADER/NAV Y HERO -->
+        <!-- ======================================================== -->
+        <!-- Cristian, modifica la barra de navegación y agrega un banner Hero si lo deseas -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container px-4 px-lg-5">
                 <a class="navbar-brand" href="#!">Jordan 1</a>
@@ -31,16 +35,6 @@
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
                         <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Inicio</a></li>
                         <li class="nav-item"><a class="nav-link" href="#!">Historia</a></li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Modelos</a>
-                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                <li><a class="dropdown-item" href="#!">Ver todos</a></li>
-                                <li><hr class="dropdown-divider" /></li>
-                                <li><a class="dropdown-item" href="#!">High</a></li>
-                                <li><a class="dropdown-item" href="#!">Mid</a></li>
-                                <li><a class="dropdown-item" href="#!">Low</a></li>
-                            </ul>
-                        </li>
                     </ul>
                     <form class="d-flex">
                         <button class="btn btn-outline-dark" type="submit">
@@ -52,90 +46,105 @@
                 </div>
             </div>
         </nav>
-        <!-- Product section-->
-        <section class="py-5">
+        <!-- ======================================================== -->
+        <!-- FIN SECCIÓN CRISTIAN -->
+        <!-- ======================================================== -->
+
+
+        <!-- ======================================================== -->
+        <!-- INICIO SECCIÓN SNAIDER - INFORMACIÓN DEL PRODUCTO -->
+        <!-- ======================================================== -->
+        <!-- Snaider, personaliza la imagen principal, el precio y la descripción -->
+        <section class="py-5" id="producto-info">
             <div class="container px-4 px-lg-5 my-5">
                 <div class="row gx-4 gx-lg-5 align-items-center">
-                    <div class="col-md-6"><img class="card-img-top mb-5 mb-md-0" src="https://dummyimage.com/600x700/dee2e6/6c757d.jpg" alt="..." /></div>
+                    <div class="col-md-6"><img class="card-img-top mb-5 mb-md-0" src="https://dummyimage.com/600x700/dee2e6/6c757d.jpg" alt="Imagen Jordan 1 Principal" /></div>
                     <div class="col-md-6">
                         <div class="small mb-1">SKU: J1-CHICAGO-2015</div>
                         <h1 class="display-5 fw-bolder">Air Jordan 1 Retro High</h1>
                         <div class="fs-5 mb-5">
                             <span>$180.00</span>
                         </div>
-                        <p class="lead">Un ícono de la cultura sneaker. Con su diseño clásico y materiales de primera calidad, las Jordan 1 no solo ofrecen rendimiento en la cancha, sino que dominan las calles. Sé parte de la historia.</p>
+                        <p class="lead">Un ícono de la cultura sneaker. Con su diseño clásico y materiales de primera calidad, las Jordan 1 no solo ofrecen rendimiento en la cancha, sino que dominan las calles.</p>
                         <div class="d-flex">
                             <input class="form-control text-center me-3" id="inputQuantity" type="num" value="1" style="max-width: 3rem" />
                             <button class="btn btn-outline-dark flex-shrink-0" type="button">
-                                <i class="bi-cart-fill me-1"></i>
-                                Añadir al carrito
+                                <i class="bi-cart-fill me-1"></i> Añadir al carrito
                             </button>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- Related items section-->
-        <section class="py-5 bg-light">
+        <!-- ======================================================== -->
+        <!-- FIN SECCIÓN SNAIDER -->
+        <!-- ======================================================== -->
+
+
+        <!-- ======================================================== -->
+        <!-- INICIO SECCIÓN CESAR - CARACTERÍSTICAS TÉCNICAS -->
+        <!-- ======================================================== -->
+        <section class="py-5 bg-light" id="caracteristicas">
             <div class="container px-4 px-lg-5 mt-5">
-                <h2 class="fw-bolder mb-4">Productos relacionados</h2>
-                <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
-                    <div class="col mb-5">
-                        <div class="card h-100">
-                            <!-- Product image-->
-                            <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
-                            <!-- Product details-->
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <!-- Product name-->
-                                    <h5 class="fw-bolder">Jordan 1 Mid</h5>
-                                    <!-- Product price-->
-                                    $125.00
-                                </div>
-                            </div>
-                            <!-- Product actions-->
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Ver opciones</a></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col mb-5">
-                        <div class="card h-100">
-                            <!-- Sale badge-->
-                            <div class="badge bg-dark text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Oferta</div>
-                            <!-- Product image-->
-                            <img class="card-img-top" src="https://dummyimage.com/450x300/dee2e6/6c757d.jpg" alt="..." />
-                            <!-- Product details-->
-                            <div class="card-body p-4">
-                                <div class="text-center">
-                                    <!-- Product name-->
-                                    <h5 class="fw-bolder">Jordan 1 Low</h5>
-                                    <!-- Product reviews-->
-                                    <div class="d-flex justify-content-center small text-warning mb-2">
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                        <div class="bi-star-fill"></div>
-                                    </div>
-                                    <!-- Product price-->
-                                    <span class="text-muted text-decoration-line-through">$115.00</span>
-                                    $100.00
-                                </div>
-                            </div>
-                            <!-- Product actions-->
-                            <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                                <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Añadir al carrito</a></div>
-                            </div>
-                        </div>
-                    </div>
+                <h2 class="fw-bolder mb-4 text-center">Características Técnicas</h2>
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <!-- Cesar: Aquí debes agregar iconos o descripciones de los materiales (cuero, suela de aire, etc.) -->
+                    
                 </div>
             </div>
         </section>
-        <!-- Footer-->
+        <!-- ======================================================== -->
+        <!-- FIN SECCIÓN CESAR -->
+        <!-- ======================================================== -->
+
+
+        <!-- ======================================================== -->
+        <!-- INICIO SECCIÓN JOEL - GALERÍA VISUAL -->
+        <!-- ======================================================== -->
+        <section class="py-5" id="galeria">
+            <div class="container px-4 px-lg-5 mt-5">
+                <h2 class="fw-bolder mb-4 text-center">Galería</h2>
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <!-- Joel: Aquí debes crear una cuadrícula (grid) con imágenes de la zapatilla desde diferentes ángulos -->
+
+                </div>
+            </div>
+        </section>
+        <!-- ======================================================== -->
+        <!-- FIN SECCIÓN JOEL -->
+        <!-- ======================================================== -->
+
+
+        <!-- ======================================================== -->
+        <!-- INICIO SECCIÓN DAKY - MODELOS Y COLORES (OFERTAS) -->
+        <!-- ======================================================== -->
+        <section class="py-5 bg-light" id="modelos">
+            <div class="container px-4 px-lg-5 mt-5">
+                <h2 class="fw-bolder mb-4 text-center">Otros Modelos y Colores</h2>
+                <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+                    <!-- Daky: Aquí debes agregar las tarjetas (cards) mostrando variantes como Jordan 1 Mid, Low, Chicago, Bred, etc. -->
+
+                </div>
+            </div>
+        </section>
+        <!-- ======================================================== -->
+        <!-- FIN SECCIÓN DAKY -->
+        <!-- ======================================================== -->
+
+
+        <!-- ======================================================== -->
+        <!-- INICIO SECCIÓN SONIA - FOOTER Y CTA -->
+        <!-- ======================================================== -->
+        <!-- Sonia, diseña el pie de página. Puedes agregar enlaces a redes sociales o un formulario de newsletter -->
         <footer class="py-5 bg-dark">
-            <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Equipo Jordan 1 UTA 2026</p></div>
+            <div class="container">
+                <p class="m-0 text-center text-white">Copyright &copy; Equipo Jordan 1 UTA 2026</p>
+            </div>
         </footer>
+        <!-- ======================================================== -->
+        <!-- FIN SECCIÓN SONIA -->
+        <!-- ======================================================== -->
+
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
