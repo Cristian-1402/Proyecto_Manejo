@@ -1,153 +1,177 @@
 <!DOCTYPE html>
 <html lang="es">
-    <head>
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-        <meta name="description" content="Landing page de Jordan 1 - Proyecto colaborativo GitFlow" />
-        <meta name="author" content="Equipo de Desarrollo - UTA" />
-        <title>Jordan 1 - Exclusividad y Estilo</title>
-        <!-- Favicon-->
-        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-        <!-- Bootstrap icons-->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
-        <!-- Core theme CSS (includes Bootstrap)-->
-        <link href="css/styles.css" rel="stylesheet" />
-        
-        <!-- Estilos modulares del equipo -->
-        <link href="css/header-hero.css" rel="stylesheet" />
-        <link href="css/info.css" rel="stylesheet" />
-        <link href="css/features.css" rel="stylesheet" />
-        <link href="css/gallery.css" rel="stylesheet" />
-        <link href="css/models.css" rel="stylesheet" />
-        <link href="css/footer.css" rel="stylesheet" />
-    </head>
-    <body>
 
-        <!-- ======================================================== -->
-        <!-- INICIO SECCIÓN CRISTIAN - HEADER/NAV Y HERO -->
-        <!-- ======================================================== -->
-        <!-- Cristian, modifica la barra de navegación y agrega un banner Hero si lo deseas -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="Landing page de Jordan 1 - Proyecto colaborativo GitFlow" />
+    <meta name="author" content="Equipo de Desarrollo - UTA" />
+    <title>Jordan 1 - Exclusividad y Estilo</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+
+    <!-- Estilos modulares del equipo -->
+    <link href="css/header-hero.css" rel="stylesheet" />
+    <link href="css/info.css" rel="stylesheet" />
+    <link href="css/features.css" rel="stylesheet" />
+    <link href="css/gallery.css" rel="stylesheet" />
+    <link href="css/models.css" rel="stylesheet" />
+    <link href="css/footer.css" rel="stylesheet" />
+</head>
+
+<body>
+
+    <!-- ======================================================== -->
+    <!-- INICIO SECCIÓN CRISTIAN - HEADER/NAV Y HERO -->
+    <!-- ======================================================== -->
+    <!-- Cristian, modifica la barra de navegación y agrega un banner Hero si lo deseas -->
+    <header>
+        <!-- Barra de Navegación -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
             <div class="container px-4 px-lg-5">
-                <a class="navbar-brand" href="#!">Jordan 1</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <a class="navbar-brand fw-bold text-uppercase text-danger" href="#!">Jordan 1</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4 fw-bold">
                         <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Inicio</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#!">Historia</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#galeria">Galería</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#modelos">Modelos</a></li>
                     </ul>
                     <form class="d-flex">
-                        <button class="btn btn-outline-dark" type="submit">
-                            <i class="bi-cart-fill me-1"></i>
-                            Carrito
-                            <span class="badge bg-dark text-white ms-1 rounded-pill">0</span>
+                        <button class="btn btn-dark rounded-0" type="submit">
+                            <i class="bi-cart-fill me-1"></i> Carrito
+                            <span class="badge bg-danger text-white ms-1 rounded-pill">0</span>
                         </button>
                     </form>
                 </div>
             </div>
         </nav>
-        <!-- ======================================================== -->
-        <!-- FIN SECCIÓN CRISTIAN -->
-        <!-- ======================================================== -->
 
-
-        <!-- ======================================================== -->
-        <!-- INICIO SECCIÓN SNAIDER - INFORMACIÓN DEL PRODUCTO -->
-        <!-- ======================================================== -->
-        <!-- Snaider, personaliza la imagen principal, el precio y la descripción -->
-        <section class="py-5" id="producto-info">
+        <!-- Sección Hero -->
+        <div class="hero-section bg-dark text-white text-center py-5"
+            style="background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1608667508764-33cf0726b13a?q=80&w=1200&auto=format&fit=crop') center/cover; padding: 120px 0;">
             <div class="container px-4 px-lg-5 my-5">
-                <div class="row gx-4 gx-lg-5 align-items-center">
-                    <div class="col-md-6"><img class="card-img-top mb-5 mb-md-0" src="https://dummyimage.com/600x700/dee2e6/6c757d.jpg" alt="Imagen Jordan 1 Principal" /></div>
-                    <div class="col-md-6">
-                        <div class="small mb-1">SKU: J1-CHICAGO-2015</div>
-                        <h1 class="display-5 fw-bolder">Air Jordan 1 Retro High</h1>
-                        <div class="fs-5 mb-5">
-                            <span>$180.00</span>
-                        </div>
-                        <p class="lead">Un ícono de la cultura sneaker. Con su diseño clásico y materiales de primera calidad, las Jordan 1 no solo ofrecen rendimiento en la cancha, sino que dominan las calles.</p>
-                        <div class="d-flex">
-                            <input class="form-control text-center me-3" id="inputQuantity" type="num" value="1" style="max-width: 3rem" />
-                            <button class="btn btn-outline-dark flex-shrink-0" type="button">
-                                <i class="bi-cart-fill me-1"></i> Añadir al carrito
-                            </button>
-                        </div>
+                <h1 class="display-3 fw-bolder text-uppercase">La Leyenda Continúa</h1>
+                <p class="lead fw-normal text-white-50 mb-4">El modelo que cambió la cultura sneaker para siempre.</p>
+                <a href="#producto-info"
+                    class="btn btn-danger btn-lg text-uppercase fw-bold rounded-0 px-4 py-2">Descubrir Retro High</a>
+            </div>
+        </div>
+    </header>
+    <!-- ======================================================== -->
+    <!-- FIN SECCIÓN CRISTIAN -->
+    <!-- ======================================================== -->
+
+
+    <!-- ======================================================== -->
+    <!-- INICIO SECCIÓN SNAIDER - INFORMACIÓN DEL PRODUCTO -->
+    <!-- ======================================================== -->
+    <!-- Snaider, personaliza la imagen principal, el precio y la descripción -->
+    <section class="py-5" id="producto-info">
+        <div class="container px-4 px-lg-5 my-5">
+            <div class="row gx-4 gx-lg-5 align-items-center">
+                <div class="col-md-6"><img class="card-img-top mb-5 mb-md-0"
+                        src="https://dummyimage.com/600x700/dee2e6/6c757d.jpg" alt="Imagen Jordan 1 Principal" /></div>
+                <div class="col-md-6">
+                    <div class="small mb-1">SKU: J1-CHICAGO-2015</div>
+                    <h1 class="display-5 fw-bolder">Air Jordan 1 Retro High</h1>
+                    <div class="fs-5 mb-5">
+                        <span>$180.00</span>
+                    </div>
+                    <p class="lead">Un ícono de la cultura sneaker. Con su diseño clásico y materiales de primera
+                        calidad, las Jordan 1 no solo ofrecen rendimiento en la cancha, sino que dominan las calles.</p>
+                    <div class="d-flex">
+                        <input class="form-control text-center me-3" id="inputQuantity" type="num" value="1"
+                            style="max-width: 3rem" />
+                        <button class="btn btn-outline-dark flex-shrink-0" type="button">
+                            <i class="bi-cart-fill me-1"></i> Añadir al carrito
+                        </button>
                     </div>
                 </div>
             </div>
-        </section>
-        <!-- ======================================================== -->
-        <!-- FIN SECCIÓN SNAIDER -->
-        <!-- ======================================================== -->
+        </div>
+    </section>
+    <!-- ======================================================== -->
+    <!-- FIN SECCIÓN SNAIDER -->
+    <!-- ======================================================== -->
 
 
-        <!-- ======================================================== -->
-        <!-- INICIO SECCIÓN CESAR - CARACTERÍSTICAS TÉCNICAS -->
-        <!-- ======================================================== -->
-        <section class="py-5 bg-light" id="caracteristicas">
-            <div class="container px-4 px-lg-5 mt-5">
-                <h2 class="fw-bolder mb-4 text-center">Características Técnicas</h2>
-                <div class="row gx-4 gx-lg-5 justify-content-center">
-                    <!-- Cesar: Aquí debes agregar iconos o descripciones de los materiales (cuero, suela de aire, etc.) -->
-                    
-                </div>
+    <!-- ======================================================== -->
+    <!-- INICIO SECCIÓN CESAR - CARACTERÍSTICAS TÉCNICAS -->
+    <!-- ======================================================== -->
+    <section class="py-5 bg-light" id="caracteristicas">
+        <div class="container px-4 px-lg-5 mt-5">
+            <h2 class="fw-bolder mb-4 text-center">Características Técnicas</h2>
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <!-- Cesar: Aquí debes agregar iconos o descripciones de los materiales (cuero, suela de aire, etc.) -->
+
             </div>
-        </section>
-        <!-- ======================================================== -->
-        <!-- FIN SECCIÓN CESAR -->
-        <!-- ======================================================== -->
+        </div>
+    </section>
+    <!-- ======================================================== -->
+    <!-- FIN SECCIÓN CESAR -->
+    <!-- ======================================================== -->
 
 
-        <!-- ======================================================== -->
-        <!-- INICIO SECCIÓN JOEL - GALERÍA VISUAL -->
-        <!-- ======================================================== -->
-        <section class="py-5" id="galeria">
-            <div class="container px-4 px-lg-5 mt-5">
-                <h2 class="fw-bolder mb-4 text-center">Galería</h2>
-                <div class="row gx-4 gx-lg-5 justify-content-center">
-                    <!-- Joel: Aquí debes crear una cuadrícula (grid) con imágenes de la zapatilla desde diferentes ángulos -->
+    <!-- ======================================================== -->
+    <!-- INICIO SECCIÓN JOEL - GALERÍA VISUAL -->
+    <!-- ======================================================== -->
+    <section class="py-5" id="galeria">
+        <div class="container px-4 px-lg-5 mt-5">
+            <h2 class="fw-bolder mb-4 text-center">Galería</h2>
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <!-- Joel: Aquí debes crear una cuadrícula (grid) con imágenes de la zapatilla desde diferentes ángulos -->
 
-                </div>
             </div>
-        </section>
-        <!-- ======================================================== -->
-        <!-- FIN SECCIÓN JOEL -->
-        <!-- ======================================================== -->
+        </div>
+    </section>
+    <!-- ======================================================== -->
+    <!-- FIN SECCIÓN JOEL -->
+    <!-- ======================================================== -->
 
 
-        <!-- ======================================================== -->
-        <!-- INICIO SECCIÓN DAKY - MODELOS Y COLORES (OFERTAS) -->
-        <!-- ======================================================== -->
-        <section class="py-5 bg-light" id="modelos">
-            <div class="container px-4 px-lg-5 mt-5">
-                <h2 class="fw-bolder mb-4 text-center">Otros Modelos y Colores</h2>
-                <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
-                    <!-- Daky: Aquí debes agregar las tarjetas (cards) mostrando variantes como Jordan 1 Mid, Low, Chicago, Bred, etc. -->
+    <!-- ======================================================== -->
+    <!-- INICIO SECCIÓN DAKY - MODELOS Y COLORES (OFERTAS) -->
+    <!-- ======================================================== -->
+    <section class="py-5 bg-light" id="modelos">
+        <div class="container px-4 px-lg-5 mt-5">
+            <h2 class="fw-bolder mb-4 text-center">Otros Modelos y Colores</h2>
+            <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+                <!-- Daky: Aquí debes agregar las tarjetas (cards) mostrando variantes como Jordan 1 Mid, Low, Chicago, Bred, etc. -->
 
-                </div>
             </div>
-        </section>
-        <!-- ======================================================== -->
-        <!-- FIN SECCIÓN DAKY -->
-        <!-- ======================================================== -->
+        </div>
+    </section>
+    <!-- ======================================================== -->
+    <!-- FIN SECCIÓN DAKY -->
+    <!-- ======================================================== -->
 
 
-        <!-- ======================================================== -->
-        <!-- INICIO SECCIÓN SONIA - FOOTER Y CTA -->
-        <!-- ======================================================== -->
-        <!-- Sonia, diseña el pie de página. Puedes agregar enlaces a redes sociales o un formulario de newsletter -->
-        <footer class="py-5 bg-dark">
-            <div class="container">
-                <p class="m-0 text-center text-white">Copyright &copy; Equipo Jordan 1 UTA 2026</p>
-            </div>
-        </footer>
-        <!-- ======================================================== -->
-        <!-- FIN SECCIÓN SONIA -->
-        <!-- ======================================================== -->
+    <!-- ======================================================== -->
+    <!-- INICIO SECCIÓN SONIA - FOOTER Y CTA -->
+    <!-- ======================================================== -->
+    <!-- Sonia, diseña el pie de página. Puedes agregar enlaces a redes sociales o un formulario de newsletter -->
+    <footer class="py-5 bg-dark">
+        <div class="container">
+            <p class="m-0 text-center text-white">Copyright &copy; Equipo Jordan 1 UTA 2026</p>
+        </div>
+    </footer>
+    <!-- ======================================================== -->
+    <!-- FIN SECCIÓN SONIA -->
+    <!-- ======================================================== -->
 
-        <!-- Bootstrap core JS-->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Core theme JS-->
-        <script src="js/scripts.js"></script>
-    </body>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+</body>
+
 </html>
