@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (!mainImg || thumbCards.length === 0) return;
 
-    // FunciÃ³n para cambiar la imagen y textos del visor principal
+    // FunciÃ³n para cambiar la imagen con transiciÃ³n suave (fade)
     function selectThumbnail(card) {
         if (!card) return;
 
@@ -29,15 +29,22 @@ document.addEventListener('DOMContentLoaded', () => {
         const desc = card.getAttribute('data-desc') || 'Silueta clÃ¡sica en cuero de alta gama.';
         const badge = card.getAttribute('data-badge') || 'Vista Principal';
 
-        if (fullSrc) {
-            mainImg.src = fullSrc;
-            mainImg.alt = altText;
-        }
+        // Efecto suave de desvanecimiento
+        mainImg.classList.add('gallery-img-fade-out');
 
-        // Sincronizar tÃ­tulo, pie y badge en el visor
-        if (captionTitle) captionTitle.textContent = title;
-        if (captionDesc) captionDesc.textContent = desc;
-        if (mainBadge) mainBadge.textContent = badge;
+        setTimeout(() => {
+            if (fullSrc) {
+                mainImg.src = fullSrc;
+                mainImg.alt = altText;
+            }
+
+            if (captionTitle) captionTitle.textContent = title;
+            if (captionDesc) captionDesc.textContent = desc;
+            if (mainBadge) mainBadge.textContent = badge;
+
+            mainImg.classList.remove('gallery-img-fade-out');
+            mainImg.classList.add('gallery-img-fade-in');
+        }, 180);
     }
 
     // Escuchar eventos de clic en cada miniatura
@@ -50,7 +57,6 @@ document.addEventListener('DOMContentLoaded', () => {
         btn.addEventListener('click', () => {
             const filterValue = btn.getAttribute('data-filter');
 
-            // Actualizar botones de filtro
             filterButtons.forEach(b => b.classList.remove('active'));
             btn.classList.add('active');
 
@@ -70,7 +76,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             });
 
-            // Si la miniatura activa quedÃ³ oculta, activar la primera visible
             const activeCard = document.querySelector('.gallery-thumb-card.active');
             if (activeCard && activeCard.closest('.gallery-item')?.style.display === 'none' && firstVisibleCard) {
                 selectThumbnail(firstVisibleCard);

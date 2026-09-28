@@ -163,3 +163,14 @@
 .gallery-thumb-card.active .card-img-top {
     filter: brightness(1.05);
 }
+
+/* --- Transiciones y Efecto Fade --- */
+.gallery-img-fade-out {
+    opacity: 0.1 !important;
+    transform: scale(0.97) !important;
+}
+
+.gallery-img-fade-in {
+    opacity: 1 !important;
+    transform: scale(1) !important;
+}
