@@ -428,10 +428,97 @@
     <!-- ======================================================== -->
     <!-- INICIO SECCIÓN SONIA - FOOTER Y CTA -->
     <!-- ======================================================== -->
-    <!-- Sonia, diseña el pie de página. Puedes agregar enlaces a redes sociales o un formulario de newsletter -->
-    <footer class="py-5 bg-dark">
-        <div class="container">
-            <p class="m-0 text-center text-white">Copyright &copy; Equipo Jordan 1 UTA 2026</p>
+    <section class="sonia-cta bg-danger text-white py-5" id="sonia-cta"
+        aria-labelledby="sonia-cta-title">
+        <div class="container px-4 px-lg-5">
+            <p class="sonia-cta__eyebrow text-uppercase fw-bold mb-3">Desde la cancha. Para tu estilo.</p>
+            <h2 class="sonia-cta__title display-5 fw-bold mb-3" id="sonia-cta-title">Jordan 1</h2>
+            <p class="sonia-cta__description lead mb-4">
+                Una silueta que sigue marcando generaciones. Descubre sus detalles,
+                explora los colores y encuentra tu favorito.
+            </p>
+            <div class="sonia-cta__actions d-flex flex-wrap gap-3">
+                <a class="sonia-cta__primary btn btn-light fw-bold px-4 py-3" href="#modelos">
+                    Explorar modelos <i class="bi bi-arrow-up-right ms-2" aria-hidden="true"></i>
+                </a>
+                <a class="sonia-cta__secondary btn btn-outline-light fw-bold px-4 py-3" href="#galeria">
+                    Ver galer&iacute;a <i class="bi bi-arrow-right ms-2" aria-hidden="true"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="sonia-footer py-5 bg-dark text-white" id="sonia-footer">
+        <div class="container px-4 px-lg-5">
+            <div class="sonia-footer__grid">
+                <div class="sonia-footer__identity">
+                    <h2 class="sonia-footer__brand h3 fw-bold mb-3">Jordan 1</h2>
+                    <p class="sonia-footer__tagline lead mb-2">El legado sigue en tus pasos.</p>
+                    <p class="sonia-footer__description text-white-50 mb-4">
+                        Cultura, historia y dise&ntilde;o alrededor de una silueta ic&oacute;nica.
+                        Un proyecto acad&eacute;mico creado por estudiantes de la UTA.
+                    </p>
+                </div>
+                <nav class="sonia-footer__nav mb-4" aria-labelledby="sonia-footer-nav-title">
+                    <h3 class="h6 text-uppercase fw-bold mb-3" id="sonia-footer-nav-title">Explora Jordan 1</h3>
+                    <ul class="sonia-footer__links list-unstyled d-grid gap-2 mb-0">
+                        <li><a class="text-white" href="#producto-info">El producto</a></li>
+                        <li><a class="text-white" href="#caracteristicas">Detalles y materiales</a></li>
+                        <li><a class="text-white" href="#galeria">Galer&iacute;a</a></li>
+                        <li><a class="text-white" href="#modelos">Modelos y colores</a></li>
+                    </ul>
+                </nav>
+                <nav class="sonia-footer__official mb-4" aria-labelledby="sonia-footer-official-title">
+                    <h3 class="h6 text-uppercase fw-bold mb-3" id="sonia-footer-official-title">Universo Jordan</h3>
+                    <ul class="sonia-footer__links list-unstyled d-grid gap-2 mb-3">
+                        <li>
+                            <a class="text-white" href="https://www.nike.com/jordan"
+                                target="_blank" rel="noopener noreferrer">
+                                Jordan en Nike <i class="bi bi-box-arrow-up-right ms-1" aria-hidden="true"></i>
+                                <span class="visually-hidden">(abre en una pesta&ntilde;a nueva)</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="text-white" href="https://www.nike.com/jordan/air-jordan-1"
+                                target="_blank" rel="noopener noreferrer">
+                                Archivo Air Jordan 1 <i class="bi bi-box-arrow-up-right ms-1" aria-hidden="true"></i>
+                                <span class="visually-hidden">(abre en una pesta&ntilde;a nueva)</span>
+                            </a>
+                        </li>
+                    </ul>
+                    <p class="small text-white-50 mb-0">Sitios oficiales externos. Se abren en una pesta&ntilde;a nueva.</p>
+                </nav>
+                <form class="sonia-newsletter mb-4" id="newsletterForm"
+                    aria-labelledby="sonia-newsletter-title" aria-describedby="sonia-newsletter-note">
+                    <h3 class="h5 fw-bold mb-3" id="sonia-newsletter-title">Jordan 1 Club</h3>
+                    <p class="small text-white-50" id="sonia-newsletter-note">
+                        Formulario de demostraci&oacute;n acad&eacute;mica. No realiza suscripciones reales.
+                    </p>
+                    <!-- JavaScript habilitara los campos tras interceptar el envio. -->
+                    <fieldset class="sonia-newsletter__fields" id="newsletterFields" disabled>
+                        <legend class="visually-hidden">Registro de demostraci&oacute;n</legend>
+                        <label class="form-label" for="newsletterEmail">Correo electr&oacute;nico</label>
+                        <input class="sonia-newsletter__input form-control mb-3" id="newsletterEmail"
+                            name="email" type="email" placeholder="nombre@example.com"
+                            autocomplete="off" maxlength="254" aria-describedby="sonia-newsletter-privacy" required />
+                        <button class="sonia-newsletter__submit btn btn-light fw-bold" type="submit">
+                            Probar registro <i class="bi bi-arrow-right ms-2" aria-hidden="true"></i>
+                        </button>
+                    </fieldset>
+                    <p class="sonia-newsletter__privacy small text-white-50 mt-3 mb-0" id="sonia-newsletter-privacy">
+                        Usa un correo ficticio para la prueba. Este formulario no env&iacute;a ni almacena
+                        tu correo y no genera una suscripci&oacute;n.
+                    </p>
+                </form>
+            </div>
+            <div class="sonia-footer__bottom border-top border-secondary pt-3">
+                <p class="sonia-footer__disclaimer small text-white-50 mb-3">
+                    Proyecto acad&eacute;mico independiente de estudiantes de la UTA.
+                    No es una tienda oficial ni est&aacute; afiliado a Nike o Jordan.
+                    No se procesan compras ni pagos en este sitio.
+                </p>
+                <p class="small mb-0">Copyright &copy; Equipo Jordan 1 UTA 2026</p>
+            </div>
         </div>
     </footer>
     <!-- ======================================================== -->
