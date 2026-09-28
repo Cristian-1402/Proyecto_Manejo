@@ -279,14 +279,23 @@
                         <label class="form-label" for="newsletterEmail">Correo electr&oacute;nico</label>
                         <input class="sonia-newsletter__input form-control mb-3" id="newsletterEmail"
                             name="email" type="email" placeholder="nombre@example.com"
-                            autocomplete="off" maxlength="254" required />
+                            autocomplete="off" maxlength="254" aria-describedby="sonia-newsletter-privacy" required />
                         <button class="sonia-newsletter__submit btn btn-light fw-bold" type="submit">
                             Probar registro <i class="bi bi-arrow-right ms-2" aria-hidden="true"></i>
                         </button>
                     </fieldset>
+                    <p class="sonia-newsletter__privacy small text-white-50 mt-3 mb-0" id="sonia-newsletter-privacy">
+                        Usa un correo ficticio para la prueba. Este formulario no env&iacute;a ni almacena
+                        tu correo y no genera una suscripci&oacute;n.
+                    </p>
                 </form>
             </div>
             <div class="sonia-footer__bottom border-top border-secondary pt-3">
+                <p class="sonia-footer__disclaimer small text-white-50 mb-3">
+                    Proyecto acad&eacute;mico independiente de estudiantes de la UTA.
+                    No es una tienda oficial ni est&aacute; afiliado a Nike o Jordan.
+                    No se procesan compras ni pagos en este sitio.
+                </p>
                 <p class="small mb-0">Copyright &copy; Equipo Jordan 1 UTA 2026</p>
             </div>
         </div>
