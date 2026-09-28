@@ -10888,3 +10888,101 @@ textarea.form-control-lg {
   outline-offset: 5px;
   box-shadow: none;
 }
+
+/* Sonia: footer y formulario de demostracion. */
+.sonia-footer.bg-dark {
+  background-color: #171717 !important;
+}
+
+.sonia-footer__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 14rem), 1fr));
+  align-items: start;
+  gap: 2rem;
+  padding-bottom: 2rem;
+}
+
+.sonia-footer__grid > * {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.sonia-footer .sonia-footer__brand {
+  border-left: 4px solid #ef4056;
+  padding-left: 0.875rem;
+  font-size: 2rem;
+  line-height: 1.2;
+  letter-spacing: 0;
+}
+
+.sonia-footer .sonia-footer__tagline {
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.6;
+}
+
+.sonia-footer .text-white-50 {
+  color: #bdbdbd !important;
+}
+
+.sonia-footer__description,
+.sonia-footer__official p,
+.sonia-newsletter p {
+  line-height: 1.7;
+}
+
+.sonia-footer__links a {
+  display: inline-block;
+  padding-block: 0.375rem;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  text-underline-offset: 0.25rem;
+}
+
+.sonia-footer__links a:hover {
+  color: #ffffff !important;
+  text-decoration-color: #ef4056;
+}
+
+.sonia-footer .sonia-newsletter__input {
+  min-height: 3rem;
+  border: 1px solid #737373;
+  border-radius: 4px;
+  background-color: #ffffff;
+  color: #171717;
+  font-size: 1rem;
+}
+
+.sonia-newsletter__input::placeholder {
+  color: #626262;
+  opacity: 1;
+}
+
+.sonia-footer .sonia-newsletter__submit {
+  --bs-btn-color: #ffffff;
+  --bs-btn-bg: #bb182b;
+  --bs-btn-border-color: #bb182b;
+  --bs-btn-hover-color: #ffffff;
+  --bs-btn-hover-bg: #961323;
+  --bs-btn-hover-border-color: #961323;
+  --bs-btn-active-color: #ffffff;
+  --bs-btn-active-bg: #79101c;
+  --bs-btn-active-border-color: #79101c;
+  --bs-btn-disabled-color: #ffffff;
+  --bs-btn-disabled-bg: #bb182b;
+  --bs-btn-disabled-border-color: #bb182b;
+  width: 100%;
+  min-height: 3rem;
+  border-radius: 4px;
+  white-space: normal;
+}
+
+.sonia-footer__bottom {
+  margin-top: 1rem;
+  font-size: 0.875rem;
+  line-height: 1.7;
+}
+
+.sonia-footer__disclaimer {
+  max-width: 85ch;
+}
