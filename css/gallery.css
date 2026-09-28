@@ -2,3 +2,27 @@
    ESTILOS SECCIÃ“N GALERÃA VISUAL - JOEL
    Proyecto Landing Page Air Jordan 1 (UTA)
    ======================================================== */
+
+:root {
+    --gallery-red: #dc3545;
+    --gallery-red-dark: #b02a37;
+    --gallery-dark: #171717;
+    --gallery-gray-bg: #f8f9fa;
+    --gallery-card-bg: #ffffff;
+    --gallery-border-color: #e5e7eb;
+    --gallery-shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.06);
+    --gallery-shadow-md: 0 8px 24px rgba(0, 0, 0, 0.12);
+    --gallery-radius: 1rem;
+    --gallery-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+/* --- Layout del contenedor principal --- */
+#galeria {
+    background: linear-gradient(180deg, #ffffff 0%, #fdfdfd 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+#galeria .tracking-wider {
+    letter-spacing: 2px;
+}
