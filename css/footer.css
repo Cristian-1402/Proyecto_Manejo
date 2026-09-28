@@ -10986,3 +10986,60 @@ textarea.form-control-lg {
 .sonia-footer__disclaimer {
   max-width: 85ch;
 }
+
+.sonia-footer__links a {
+  min-height: 2.75rem;
+  padding-block: 0.625rem;
+}
+
+.sonia-footer a:focus-visible,
+.sonia-footer button:focus-visible,
+.sonia-footer input:focus-visible {
+  outline: 3px solid #ffffff;
+  outline-offset: 4px;
+  box-shadow: none;
+}
+
+.sonia-footer__links a:focus-visible {
+  text-decoration-color: #ef4056;
+}
+
+@media (max-width: 991.98px) {
+  .sonia-footer__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 575.98px) {
+  .sonia-cta > .container {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .sonia-cta .sonia-cta__title {
+    font-size: 3rem;
+  }
+
+  .sonia-cta .sonia-cta__description {
+    font-size: 1rem;
+  }
+
+  .sonia-cta__actions > a {
+    width: 100%;
+  }
+
+  .sonia-footer__grid {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1.5rem;
+    padding-bottom: 1rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sonia-cta a,
+  .sonia-footer a,
+  .sonia-footer button,
+  .sonia-footer input {
+    transition: none !important;
+  }
+}
