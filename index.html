@@ -63,10 +63,10 @@
             <div class="container px-4 px-lg-5 my-5">
                 <div class="row gx-4 gx-lg-5 align-items-center">
                     <div class="col-md-6 text-center">
-                        <img class="img-fluid rounded mb-5 mb-md-0 shadow-lg" 
-                             src="https://images.unsplash.com/photo-1552346154-21d32810aba3?auto=format&fit=crop&w=700&q=80" 
-                             alt="Zapatilla Air Jordan 1 Retro High Chicago vista lateral en cuero rojo y blanco" 
-                             loading="eager" />
+                        <img class="img-fluid rounded mb-5 mb-md-0 shadow-lg"
+                            src="https://images.unsplash.com/photo-1552346154-21d32810aba3?auto=format&fit=crop&w=700&q=80"
+                            alt="Zapatilla Air Jordan 1 Retro High Chicago vista lateral en cuero rojo y blanco"
+                            loading="eager" />
                     </div>
                     <div class="col-md-6">
                         <div class="badge bg-danger text-white mb-2 fs-6">Lanzamiento Exclusivo</div>
@@ -76,25 +76,31 @@
                             <span>$180.00 USD</span>
                         </div>
                         <p class="lead text-secondary">
-                            Diseñadas originalmente para Michael Jordan en 1985, las Air Jordan 1 revolucionaron las reglas de la NBA y transformaron la cultura del calzado urbano. Confeccionadas en cuero de grano superior, cuello acolchado de perfil alto y la emblemática unidad Air-Sole encapsulada en el talón para una amortiguación duradera.
+                            Diseñadas originalmente para Michael Jordan en 1985, las Air Jordan 1 revolucionaron las
+                            reglas de la NBA y transformaron la cultura del calzado urbano. Confeccionadas en cuero de
+                            grano superior, cuello acolchado de perfil alto y la emblemática unidad Air-Sole encapsulada
+                            en el talón para una amortiguación duradera.
                         </p>
                         <div class="d-flex align-items-center mt-4">
                             <label for="inputQuantity" class="me-2 fw-semibold">Cantidad:</label>
-                            <input class="form-control text-center me-3" id="inputQuantity" type="number" value="1" min="1" max="5" style="max-width: 4.5rem" />
+                            <input class="form-control text-center me-3" id="inputQuantity" type="number" value="1"
+                                min="1" max="5" style="max-width: 4.5rem" />
                             <button class="btn btn-dark btn-lg flex-shrink-0" type="button">
                                 <i class="bi-cart-fill me-1"></i> Reservar Par
                             </button>
                         </div>
-        <!-- Sección Hero -->
-        <div class="hero-section bg-dark text-white text-center py-5"
-            style="background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1608667508764-33cf0726b13a?q=80&w=1200&auto=format&fit=crop') center/cover; padding: 120px 0;">
-            <div class="container px-4 px-lg-5 my-5">
-                <h1 class="display-3 fw-bolder text-uppercase">La Leyenda Continúa</h1>
-                <p class="lead fw-normal text-white-50 mb-4">El modelo que cambió la cultura sneaker para siempre.</p>
-                <a href="#producto-info"
-                    class="btn btn-danger btn-lg text-uppercase fw-bold rounded-0 px-4 py-2">Descubrir Retro High</a>
-            </div>
-        </div>
+                        <!-- Sección Hero -->
+                        <div class="hero-section bg-dark text-white text-center py-5"
+                            style="background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1608667508764-33cf0726b13a?q=80&w=1200&auto=format&fit=crop') center/cover; padding: 120px 0;">
+                            <div class="container px-4 px-lg-5 my-5">
+                                <h1 class="display-3 fw-bolder text-uppercase">La Leyenda Continúa</h1>
+                                <p class="lead fw-normal text-white-50 mb-4">El modelo que cambió la cultura sneaker
+                                    para siempre.</p>
+                                <a href="#producto-info"
+                                    class="btn btn-danger btn-lg text-uppercase fw-bold rounded-0 px-4 py-2">Descubrir
+                                    Retro High</a>
+                            </div>
+                        </div>
     </header>
     <!-- ======================================================== -->
     <!-- FIN SECCIÓN CRISTIAN -->
@@ -175,10 +181,133 @@
     <!-- ======================================================== -->
     <section class="py-5" id="galeria">
         <div class="container px-4 px-lg-5 mt-5">
-            <h2 class="fw-bolder mb-4 text-center">Galería</h2>
-            <div class="row gx-4 gx-lg-5 justify-content-center">
-                <!-- Joel: Aquí debes crear una cuadrícula (grid) con imágenes de la zapatilla desde diferentes ángulos -->
+            <div class="text-center mb-5">
+                <span class="text-danger fw-bold text-uppercase tracking-wider small">Perspectivas Exclusivas</span>
+                <h2 class="fw-bolder display-6 mt-1">Galería Oficial Air Jordan 1</h2>
+                <p class="text-muted mx-auto" style="max-width: 600px;">
+                    Explora cada detalle, textura y costura desde múltiples ángulos del diseño legendario que
+                    revolucionó el baloncesto y la moda urbana.
+                </p>
+            </div>
 
+            <!-- Filtros interactivos por ángulo de vista -->
+            <div class="d-flex flex-wrap justify-content-center gap-2 mb-4" id="gallery-filters" role="group"
+                aria-label="Filtros de galería">
+                <button type="button" class="btn btn-outline-dark btn-sm active px-3 rounded-pill gallery-filter-btn"
+                    data-filter="all">
+                    <i class="bi bi-grid-fill me-1"></i> Todos
+                </button>
+                <button type="button" class="btn btn-outline-dark btn-sm px-3 rounded-pill gallery-filter-btn"
+                    data-filter="lateral">
+                    <i class="bi bi-arrow-right-circle me-1"></i> Perfil Lateral
+                </button>
+                <button type="button" class="btn btn-outline-dark btn-sm px-3 rounded-pill gallery-filter-btn"
+                    data-filter="frontal">
+                    <i class="bi bi-arrows-angle-expand me-1"></i> Frontal y Par
+                </button>
+                <button type="button" class="btn btn-outline-dark btn-sm px-3 rounded-pill gallery-filter-btn"
+                    data-filter="detalle">
+                    <i class="bi bi-zoom-in me-1"></i> Detalles & Suela
+                </button>
+            </div>
+
+            <!-- Visor Principal / Featured View -->
+            <div class="row justify-content-center mb-4">
+                <div class="col-lg-10">
+                    <div
+                        class="gallery-main-display position-relative bg-light rounded-4 overflow-hidden border shadow-sm text-center p-4">
+                        <span
+                            class="badge bg-danger position-absolute top-0 start-0 m-3 px-3 py-2 text-uppercase fw-semibold"
+                            id="gallery-badge">
+                            Vista Principal
+                        </span>
+                        <img id="gallery-main-img" class="img-fluid rounded-3"
+                            src="https://images.unsplash.com/photo-1552346154-21d32810aba3?auto=format&fit=crop&w=1200&q=80"
+                            alt="Air Jordan 1 Vista Lateral Exterior"
+                            style="max-height: 480px; object-fit: contain; transition: transform 0.3s ease;">
+                        <div class="gallery-caption mt-3">
+                            <h5 class="fw-bold mb-1" id="gallery-caption-title">Air Jordan 1 High OG - Perfil
+                                Lateral</h5>
+                            <p class="text-muted small mb-0" id="gallery-caption-desc">Silueta clásica en cuero de
+                                alta gama con el emblemático Swoosh en negro.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cuadrícula / Miniaturas Interactivas (Thumbnails) -->
+            <div class="row g-3 justify-content-center" id="gallery-thumbnails">
+                <!-- Item 1: Lateral Exterior -->
+                <div class="col-6 col-sm-4 col-md-3 gallery-item" data-category="lateral">
+                    <div class="card gallery-thumb-card h-100 border rounded-3 p-2 shadow-sm text-center active"
+                        role="button" tabindex="0"
+                        data-full-src="https://images.unsplash.com/photo-1552346154-21d32810aba3?auto=format&fit=crop&w=1200&q=80"
+                        data-title="Air Jordan 1 High OG - Perfil Lateral"
+                        data-desc="Silueta clásica en cuero de alta gama con el emblemático Swoosh en negro."
+                        data-badge="Lateral">
+                        <img src="https://images.unsplash.com/photo-1552346154-21d32810aba3?auto=format&fit=crop&w=400&q=80"
+                            class="card-img-top rounded-2" alt="Miniatura Perfil Lateral Jordan 1"
+                            style="height: 120px; object-fit: cover;">
+                        <div class="card-body p-2">
+                            <span class="small fw-semibold d-block text-truncate">Perfil Lateral</span>
+                            <span class="badge bg-light text-dark border">Lateral</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 2: Frontal y Par -->
+                <div class="col-6 col-sm-4 col-md-3 gallery-item" data-category="frontal">
+                    <div class="card gallery-thumb-card h-100 border rounded-3 p-2 shadow-sm text-center" role="button"
+                        tabindex="0"
+                        data-full-src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=1200&q=80"
+                        data-title="Air Jordan 1 - Vista Frontal del Par"
+                        data-desc="Puntera perforada para máxima transpirabilidad y lengüeta acolchada con etiqueta Nike Air."
+                        data-badge="Frontal">
+                        <img src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=400&q=80"
+                            class="card-img-top rounded-2" alt="Miniatura Vista Frontal Jordan 1"
+                            style="height: 120px; object-fit: cover;">
+                        <div class="card-body p-2">
+                            <span class="small fw-semibold d-block text-truncate">Vista Frontal</span>
+                            <span class="badge bg-light text-dark border">Frontal</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 3: Ángulo Cenital / Superior -->
+                <div class="col-6 col-sm-4 col-md-3 gallery-item" data-category="frontal">
+                    <div class="card gallery-thumb-card h-100 border rounded-3 p-2 shadow-sm text-center" role="button"
+                        tabindex="0"
+                        data-full-src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7GMQzK5Ulbv2opPgEXEDW9QHXoD9803NDpsO09AAzGQ&s=10"
+                        data-title="Air Jordan 1 - Perspectiva Superior y Cordones"
+                        data-desc="Sistema de atado tradicional con cordones premium y ojales reforzados."
+                        data-badge="Superior">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7GMQzK5Ulbv2opPgEXEDW9QHXoD9803NDpsO09AAzGQ&s=10"
+                            class="card-img-top rounded-2" alt="Miniatura Perspectiva Superior Jordan 1"
+                            style="height: 120px; object-fit: cover;">
+                        <div class="card-body p-2">
+                            <span class="small fw-semibold d-block text-truncate">Vista Superior</span>
+                            <span class="badge bg-light text-dark border">Frontal</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 4: Detalle Costuras y Cuero -->
+                <div class="col-6 col-sm-4 col-md-3 gallery-item" data-category="detalle">
+                    <div class="card gallery-thumb-card h-100 border rounded-3 p-2 shadow-sm text-center" role="button"
+                        tabindex="0"
+                        data-full-src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXAlzVtbT1X4YGF8qx7SmjDLcrx6Vgqj87ed-y5r4spg&s=10"
+                        data-title="Air Jordan 1 - Detalle de Materiales y Logotipo"
+                        data-desc="Costuras de alta resistencia y acabados artesanales en paneles de cuero genuino."
+                        data-badge="Detalle">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXAlzVtbT1X4YGF8qx7SmjDLcrx6Vgqj87ed-y5r4spg&s=10"
+                            class="card-img-top rounded-2" alt="Miniatura Detalle de Cuero Jordan 1"
+                            style="height: 120px; object-fit: cover;">
+                        <div class="card-body p-2">
+                            <span class="small fw-semibold d-block text-truncate">Detalle Textura</span>
+                            <span class="badge bg-light text-dark border">Detalle</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -194,7 +323,99 @@
         <div class="container px-4 px-lg-5 mt-5">
             <h2 class="fw-bolder mb-4 text-center">Otros Modelos y Colores</h2>
             <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
-                <!-- Daky: Aquí debes agregar las tarjetas (cards) mostrando variantes como Jordan 1 Mid, Low, Chicago, Bred, etc. -->
+                
+                <!-- Tarjeta 1: Jordan 1 Mid -->
+                <div class="col mb-5">
+                    <div class="card h-100 shadow-sm">
+                        <img class="card-img-top" src="https://cdn-images.farfetch-contents.com/13/67/82/79/13678279_17361023_1000.jpg" alt="Air Jordan 1 Mid" />
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <h5 class="fw-bolder">Air Jordan 1 Mid</h5>
+                                <div class="d-flex justify-content-center small text-warning mb-2">
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                </div>
+                                $125.00 USD
+                            </div>
+                        </div>
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Ver opciones</a></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 2: Jordan 1 Low -->
+                <div class="col mb-5">
+                    <div class="card h-100 shadow-sm">
+                        <div class="badge bg-danger text-white position-absolute" style="top: 0.5rem; right: 0.5rem">Oferta</div>
+                        <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHVLaWwYG9F4E1dazvJc92_WRwLrgahoKn0KjbtImKVdIR5nvzpGV6O_8&s=10" alt="Air Jordan 1 Low" />
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <h5 class="fw-bolder">Air Jordan 1 Low</h5>
+                                <div class="d-flex justify-content-center small text-warning mb-2">
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                </div>
+                                <span class="text-muted text-decoration-line-through">$110.00</span>
+                                $95.00 USD
+                            </div>
+                        </div>
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Ver opciones</a></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 3: Jordan 1 Retro High -->
+                <div class="col mb-5">
+                    <div class="card h-100 shadow-sm">
+                        <img class="card-img-top" src="https://images.unsplash.com/photo-1607522370275-f14206abe5d3?auto=format&fit=crop&w=450&q=80" alt="Jordan 1 Retro High" />
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <h5 class="fw-bolder">Jordan 1 Retro High</h5>
+                                <div class="d-flex justify-content-center small text-warning mb-2">
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                </div>
+                                $180.00 USD
+                            </div>
+                        </div>
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Ver opciones</a></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tarjeta 4: Jordan 1 Elevate -->
+                <div class="col mb-5">
+                    <div class="card h-100 shadow-sm">
+                        <img class="card-img-top" src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=450&q=80" alt="Jordan 1 Elevate" />
+                        <div class="card-body p-4">
+                            <div class="text-center">
+                                <h5 class="fw-bolder">Jordan 1 Elevate</h5>
+                                <div class="d-flex justify-content-center small text-warning mb-2">
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                    <div class="bi-star-fill"></div>
+                                </div>
+                                $140.00 USD
+                            </div>
+                        </div>
+                        <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Ver opciones</a></div>
+                        </div>
+                    </div>
+                </div>
 
             </div>
         </div>
