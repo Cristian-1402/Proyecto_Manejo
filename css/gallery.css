@@ -174,3 +174,40 @@
     opacity: 1 !important;
     transform: scale(1) !important;
 }
+
+/* --- AdaptaciÃ³n a Dispositivos MÃ³viles (Responsive) --- */
+@media (max-width: 991.98px) {
+    .gallery-main-display {
+        min-height: 340px;
+        padding: 1.5rem !important;
+    }
+
+    #gallery-main-img {
+        max-height: 320px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .gallery-main-display {
+        min-height: 280px;
+        padding: 1rem !important;
+    }
+
+    #gallery-main-img {
+        max-height: 240px;
+    }
+
+    #gallery-badge {
+        font-size: 0.68rem;
+        padding: 0.35rem 0.65rem !important;
+    }
+
+    .gallery-filter-btn {
+        font-size: 0.78rem;
+        padding: 0.35rem 0.75rem !important;
+    }
+
+    .gallery-thumb-card .card-img-top {
+        height: 100px !important;
+    }
+}
