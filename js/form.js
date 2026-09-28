@@ -21,6 +21,15 @@
         const description = email.getAttribute("aria-describedby") || "";
         email.setAttribute("aria-describedby", `${description} ${message.id}`.trim());
 
+        const resetButton = document.createElement("button");
+        resetButton.type = "reset";
+        resetButton.className = "sonia-newsletter__reset btn btn-outline-light mt-3 py-2 w-100";
+        const resetIcon = document.createElement("i");
+        resetIcon.className = "bi bi-arrow-counterclockwise me-2";
+        resetIcon.setAttribute("aria-hidden", "true");
+        resetButton.append(resetIcon, document.createTextNode("Reiniciar prueba"));
+        fields.append(resetButton);
+
         form.addEventListener("submit", (event) => {
             event.preventDefault();
 
@@ -46,10 +55,17 @@
                 "No se enviaron ni almacenaron datos y no se genero una suscripcion.";
         });
 
-        email.addEventListener("input", () => {
+        function clearFeedback() {
             email.setCustomValidity("");
             email.removeAttribute("aria-invalid");
             message.textContent = "";
+        }
+
+        email.addEventListener("input", clearFeedback);
+
+        form.addEventListener("reset", () => {
+            clearFeedback();
+            email.focus();
         });
 
         // Habilitar solo despues de instalar el bloqueo del envio real.
