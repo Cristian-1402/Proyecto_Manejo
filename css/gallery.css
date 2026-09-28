@@ -26,3 +26,43 @@
 #galeria .tracking-wider {
     letter-spacing: 2px;
 }
+
+/* --- Botones de filtro de categorÃ­as --- */
+#gallery-filters {
+    gap: 0.6rem !important;
+}
+
+.gallery-filter-btn {
+    font-weight: 500;
+    font-size: 0.875rem;
+    border-color: var(--gallery-border-color);
+    color: #495057;
+    background-color: #ffffff;
+    transition: var(--gallery-transition);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.gallery-filter-btn:hover {
+    color: var(--gallery-red);
+    border-color: var(--gallery-red);
+    background-color: #fff5f5;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+}
+
+.gallery-filter-btn.active,
+.gallery-filter-btn.active:hover {
+    background-color: var(--gallery-red) !important;
+    border-color: var(--gallery-red) !important;
+    color: #ffffff !important;
+    box-shadow: 0 4px 14px rgba(220, 53, 69, 0.4);
+    transform: translateY(-1px);
+}
+
+.gallery-filter-btn i {
+    transition: transform 0.2s ease;
+}
+
+.gallery-filter-btn:hover i {
+    transform: scale(1.15);
+}
