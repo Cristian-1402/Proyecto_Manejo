@@ -114,3 +114,34 @@
     color: #6c757d;
     line-height: 1.5;
 }
+
+/* --- Miniaturas Interactivas (Thumbnails) --- */
+.gallery-thumb-card {
+    background-color: var(--gallery-card-bg);
+    border: 2px solid transparent;
+    border-radius: 12px !important;
+    cursor: pointer;
+    overflow: hidden;
+    transition: var(--gallery-transition);
+    user-select: none;
+}
+
+.gallery-thumb-card .card-img-top {
+    border-radius: 8px;
+    transition: transform 0.4s ease, filter 0.3s ease;
+}
+
+.gallery-thumb-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--gallery-shadow-md) !important;
+    border-color: rgba(220, 53, 69, 0.3);
+}
+
+.gallery-thumb-card:hover .card-img-top {
+    transform: scale(1.05);
+}
+
+.gallery-thumb-card .card-body span.fw-semibold {
+    color: var(--gallery-dark);
+    font-size: 0.85rem;
+}
