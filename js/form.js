@@ -10,6 +10,17 @@
             return;
         }
 
+        const message = document.createElement("p");
+        message.id = "newsletterMessage";
+        message.className = "sonia-newsletter__message small mt-3 mb-0";
+        message.setAttribute("role", "status");
+        message.setAttribute("aria-live", "polite");
+        message.setAttribute("aria-atomic", "true");
+        fields.insertAdjacentElement("afterend", message);
+
+        const description = email.getAttribute("aria-describedby") || "";
+        email.setAttribute("aria-describedby", `${description} ${message.id}`.trim());
+
         form.addEventListener("submit", (event) => {
             event.preventDefault();
 
@@ -26,13 +37,19 @@
             email.setAttribute("aria-invalid", String(!isValid));
 
             if (!isValid) {
-                email.reportValidity();
+                message.textContent = `Revisa el correo: ${email.validationMessage}`;
+                email.focus();
+                return;
             }
+
+            message.textContent = "Prueba completada: el formato del correo es correcto. " +
+                "No se enviaron ni almacenaron datos y no se genero una suscripcion.";
         });
 
         email.addEventListener("input", () => {
             email.setCustomValidity("");
             email.removeAttribute("aria-invalid");
+            message.textContent = "";
         });
 
         // Habilitar solo despues de instalar el bloqueo del envio real.
