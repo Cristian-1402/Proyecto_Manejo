@@ -267,6 +267,24 @@
                     </ul>
                     <p class="small text-white-50 mb-0">Sitios oficiales externos. Se abren en una pesta&ntilde;a nueva.</p>
                 </nav>
+                <form class="sonia-newsletter mb-4" id="newsletterForm"
+                    aria-labelledby="sonia-newsletter-title" aria-describedby="sonia-newsletter-note">
+                    <h3 class="h5 fw-bold mb-3" id="sonia-newsletter-title">Jordan 1 Club</h3>
+                    <p class="small text-white-50" id="sonia-newsletter-note">
+                        Formulario de demostraci&oacute;n acad&eacute;mica. No realiza suscripciones reales.
+                    </p>
+                    <!-- JavaScript habilitara los campos tras interceptar el envio. -->
+                    <fieldset class="sonia-newsletter__fields" id="newsletterFields" disabled>
+                        <legend class="visually-hidden">Registro de demostraci&oacute;n</legend>
+                        <label class="form-label" for="newsletterEmail">Correo electr&oacute;nico</label>
+                        <input class="sonia-newsletter__input form-control mb-3" id="newsletterEmail"
+                            name="email" type="email" placeholder="nombre@example.com"
+                            autocomplete="off" maxlength="254" required />
+                        <button class="sonia-newsletter__submit btn btn-light fw-bold" type="submit">
+                            Probar registro <i class="bi bi-arrow-right ms-2" aria-hidden="true"></i>
+                        </button>
+                    </fieldset>
+                </form>
             </div>
             <div class="sonia-footer__bottom border-top border-secondary pt-3">
                 <p class="small mb-0">Copyright &copy; Equipo Jordan 1 UTA 2026</p>
