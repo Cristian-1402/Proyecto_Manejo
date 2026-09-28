@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (!mainImg || thumbCards.length === 0) return;
 
-    // FunciÃ³n para cambiar la imagen del visor principal
+    // FunciÃ³n para cambiar la imagen y textos del visor principal
     function selectThumbnail(card) {
         if (!card) return;
 
@@ -22,14 +22,22 @@ document.addEventListener('DOMContentLoaded', () => {
         thumbCards.forEach(c => c.classList.remove('active'));
         card.classList.add('active');
 
-        // Extraer rutas y atributos
+        // Extraer rutas y metadatos desde atributos data-*
         const fullSrc = card.getAttribute('data-full-src') || card.querySelector('img')?.src;
         const altText = card.querySelector('img')?.alt || 'Air Jordan 1';
+        const title = card.getAttribute('data-title') || 'Air Jordan 1 High OG';
+        const desc = card.getAttribute('data-desc') || 'Silueta clÃ¡sica en cuero de alta gama.';
+        const badge = card.getAttribute('data-badge') || 'Vista Principal';
 
         if (fullSrc) {
             mainImg.src = fullSrc;
             mainImg.alt = altText;
         }
+
+        // Sincronizar tÃ­tulo, pie y badge en el visor
+        if (captionTitle) captionTitle.textContent = title;
+        if (captionDesc) captionDesc.textContent = desc;
+        if (mainBadge) mainBadge.textContent = badge;
     }
 
     // Escuchar eventos de clic en cada miniatura
