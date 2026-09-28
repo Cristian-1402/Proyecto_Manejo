@@ -145,3 +145,21 @@
     color: var(--gallery-dark);
     font-size: 0.85rem;
 }
+
+/* Indicador de miniatura seleccionada / activa */
+.gallery-thumb-card.active {
+    border-color: var(--gallery-red) !important;
+    background-color: #fff9f9;
+    box-shadow: 0 0 0 3px rgba(220, 53, 69, 0.25), var(--gallery-shadow-md) !important;
+    transform: translateY(-2px);
+}
+
+.gallery-thumb-card.active .badge {
+    background-color: var(--gallery-red) !important;
+    color: #ffffff !important;
+    border-color: var(--gallery-red) !important;
+}
+
+.gallery-thumb-card.active .card-img-top {
+    filter: brightness(1.05);
+}
