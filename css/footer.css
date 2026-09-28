@@ -10824,3 +10824,67 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+
+/* Sonia: CTA. Los selectores se limitan a su seccion. */
+.sonia-cta.bg-danger {
+  background-color: #bb182b !important;
+  border-top: 6px solid #171717;
+}
+
+.sonia-cta > .container {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.sonia-cta .sonia-cta__eyebrow {
+  font-size: 0.875rem;
+  letter-spacing: 0;
+  line-height: 1.6;
+}
+
+.sonia-cta .sonia-cta__title {
+  font-size: 4rem;
+  font-weight: 800 !important;
+  letter-spacing: 0;
+  line-height: 1.05;
+  overflow-wrap: anywhere;
+}
+
+.sonia-cta .sonia-cta__description {
+  max-width: 48ch;
+  font-size: 1.125rem;
+  line-height: 1.7;
+}
+
+.sonia-cta__actions > a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  min-height: 3.5rem;
+  max-width: 100%;
+  border-radius: 4px;
+  white-space: normal;
+}
+
+.sonia-cta__actions > a > i {
+  flex-shrink: 0;
+}
+
+.sonia-cta .sonia-cta__primary {
+  --bs-btn-color: #171717;
+  --bs-btn-bg: #ffffff;
+  --bs-btn-border-color: #ffffff;
+  --bs-btn-hover-color: #ffffff;
+  --bs-btn-hover-bg: #171717;
+  --bs-btn-hover-border-color: #171717;
+  --bs-btn-active-color: #ffffff;
+  --bs-btn-active-bg: #171717;
+  --bs-btn-active-border-color: #171717;
+}
+
+.sonia-cta__actions > a:focus-visible {
+  outline: 3px solid #ffffff;
+  outline-offset: 5px;
+  box-shadow: none;
+}
