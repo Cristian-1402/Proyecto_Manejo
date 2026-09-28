@@ -44,4 +44,37 @@ document.addEventListener('DOMContentLoaded', () => {
     thumbCards.forEach(card => {
         card.addEventListener('click', () => selectThumbnail(card));
     });
+
+    // Filtrado interactivo por categorÃ­a
+    filterButtons.forEach(btn => {
+        btn.addEventListener('click', () => {
+            const filterValue = btn.getAttribute('data-filter');
+
+            // Actualizar botones de filtro
+            filterButtons.forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+
+            let firstVisibleCard = null;
+
+            galleryItems.forEach(item => {
+                const category = item.getAttribute('data-category');
+                const card = item.querySelector('.gallery-thumb-card');
+
+                if (filterValue === 'all' || category === filterValue) {
+                    item.style.display = '';
+                    if (!firstVisibleCard && card) {
+                        firstVisibleCard = card;
+                    }
+                } else {
+                    item.style.display = 'none';
+                }
+            });
+
+            // Si la miniatura activa quedÃ³ oculta, activar la primera visible
+            const activeCard = document.querySelector('.gallery-thumb-card.active');
+            if (activeCard && activeCard.closest('.gallery-item')?.style.display === 'none' && firstVisibleCard) {
+                selectThumbnail(firstVisibleCard);
+            }
+        });
+    });
 });
