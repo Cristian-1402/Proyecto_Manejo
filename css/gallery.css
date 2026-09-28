@@ -66,3 +66,51 @@
 .gallery-filter-btn:hover i {
     transform: scale(1.15);
 }
+
+/* --- Visor Principal (Featured View) --- */
+.gallery-main-display {
+    background: radial-gradient(circle at center, #ffffff 40%, #f8f9fa 100%) !important;
+    border: 1px solid var(--gallery-border-color) !important;
+    box-shadow: var(--gallery-shadow-md) !important;
+    border-radius: var(--gallery-radius) !important;
+    min-height: 420px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: var(--gallery-transition);
+}
+
+#gallery-badge {
+    letter-spacing: 1px;
+    font-size: 0.75rem;
+    box-shadow: 0 4px 10px rgba(220, 53, 69, 0.35);
+    background-color: var(--gallery-red) !important;
+    border-radius: 6px;
+    z-index: 2;
+}
+
+#gallery-main-img {
+    max-height: 420px;
+    width: auto;
+    object-fit: contain;
+    filter: drop-shadow(0 12px 20px rgba(0, 0, 0, 0.18));
+    transition: transform 0.35s cubic-bezier(0.25, 0.8, 0.25, 1), opacity 0.25s ease;
+}
+
+.gallery-caption {
+    width: 100%;
+    max-width: 650px;
+    border-top: 1px solid rgba(0, 0, 0, 0.06);
+    padding-top: 1rem;
+}
+
+#gallery-caption-title {
+    color: var(--gallery-dark);
+    letter-spacing: 0.5px;
+}
+
+#gallery-caption-desc {
+    color: #6c757d;
+    line-height: 1.5;
+}
