@@ -52,6 +52,16 @@ document.addEventListener('DOMContentLoaded', () => {
         card.addEventListener('click', () => selectThumbnail(card));
     });
 
+    // Accesibilidad: permitir selecciÃ³n con teclas Enter o Espacio
+    thumbCards.forEach(card => {
+        card.addEventListener('keydown', (e) => {
+            if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                selectThumbnail(card);
+            }
+        });
+    });
+
     // Filtrado interactivo por categorÃ­a
     filterButtons.forEach(btn => {
         btn.addEventListener('click', () => {

@@ -211,3 +211,21 @@
         height: 100px !important;
     }
 }
+
+/* --- Accesibilidad y NavegaciÃ³n por Teclado --- */
+.gallery-thumb-card:focus-visible,
+.gallery-filter-btn:focus-visible {
+    outline: 3px solid var(--gallery-red);
+    outline-offset: 3px;
+    box-shadow: 0 0 0 5px rgba(220, 53, 69, 0.25) !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .gallery-thumb-card,
+    .gallery-filter-btn,
+    #gallery-main-img,
+    .gallery-thumb-card .card-img-top {
+        transition: none !important;
+        transform: none !important;
+    }
+}
