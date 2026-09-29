@@ -10,6 +10,28 @@
  * Copyright 2011-2022 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+ /* Estilos para la sección de Modelos y Opciones - Daky */
+#modelos .card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(0,0,0,0.125);
+}
+#modelos .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 1rem 3rem rgba(0,0,0,0.175) !important;
+}
+#modelos .card-img-top {
+    height: 220px;
+    object-fit: cover;
+}
+/* Ajustes adicionales responsivos */
+@media (max-width: 768px) {
+    #modelos .card-img-top {
+        height: 180px;
+    }
+}
+#modelos .fw-bolder {
+    color: #212529;
+}
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
