@@ -21,6 +21,7 @@
     <link href="css/gallery.css" rel="stylesheet" />
     <link href="css/models.css" rel="stylesheet" />
     <link href="css/footer.css" rel="stylesheet" />
+    <link href="css/base.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -70,62 +71,38 @@
         <!-- ======================================================== -->
         <!-- INICIO SECCIÓN SNAIDER - INFORMACIÓN DEL PRODUCTO -->
         <!-- ======================================================== -->
-        <section class="py-5" id="producto-info">
+      <section class="py-5" id="producto-info">
             <div class="container px-4 px-lg-5 my-5">
                 <div class="row gx-4 gx-lg-5 align-items-center">
-                    <div class="col-md-6 text-center">
-                        <img class="img-fluid rounded mb-5 mb-md-0 shadow-lg"
-                            src="https://images.unsplash.com/photo-1552346154-21d32810aba3?auto=format&fit=crop&w=700&q=80"
-                            alt="Zapatilla Air Jordan 1 Retro High Chicago vista lateral en cuero rojo y blanco"
-                            loading="eager" />
-                    </div>
                     <div class="col-md-6">
-                        <div class="badge bg-danger text-white mb-2 fs-6">Lanzamiento Exclusivo</div>
-                        <div class="small text-muted mb-1">SKU: J1-CHICAGO-2015 | Edición de Colección</div>
-                        <h1 class="display-5 fw-bolder text-dark">Air Jordan 1 Retro High OG</h1>
-                        <div class="fs-4 mb-3 text-danger fw-bold">
+                        <div class="product-card-visual">
+                            <img class="img-fluid" 
+                                 src="https://images.unsplash.com/photo-1552346154-21d32810aba3?auto=format&fit=crop&w=700&q=80" 
+                                 alt="Zapatilla Air Jordan 1 Retro High Chicago vista lateral en cuero rojo y blanco" 
+                                 loading="eager" />
+                        </div>
+                    </div>
+                    <div class="col-md-6 mt-4 mt-md-0">
+                        <span class="badge-jordan mb-2">Lanzamiento Exclusivo</span>
+                        <div class="sku-tag mb-1">SKU: J1-CHICAGO-2015 | Edición de Colección</div>
+                        <h1 class="product-title mb-2">Air Jordan 1 Retro High OG</h1>
+                        <div class="price-tag mb-3">
                             <span>$180.00 USD</span>
                         </div>
-                        <p class="lead text-secondary">
-                            Diseñadas originalmente para Michael Jordan en 1985, las Air Jordan 1 revolucionaron las
-                            reglas de la NBA y transformaron la cultura del calzado urbano. Confeccionadas en cuero de
-                            grano superior, cuello acolchado de perfil alto y la emblemática unidad Air-Sole encapsulada
-                            en el talón para una amortiguación duradera.
+                        <p class="product-description mb-4">
+                            Diseñadas originalmente para Michael Jordan en 1985, las Air Jordan 1 revolucionaron las reglas de la NBA y transformaron la cultura del calzado urbano. Confeccionadas en cuero de grano superior, cuello acolchado de perfil alto y la emblemática unidad Air-Sole encapsulada en el talón para una amortiguación duradera.
                         </p>
-                        <div class="d-flex align-items-center mt-4">
+                        <div class="d-flex align-items-center action-box">
                             <label for="inputQuantity" class="me-2 fw-semibold">Cantidad:</label>
-                            <input class="form-control text-center me-3" id="inputQuantity" type="number" value="1"
-                                min="1" max="5" style="max-width: 4.5rem" />
-                            <button class="btn btn-dark btn-lg flex-shrink-0" type="button">
+                            <input class="form-control text-center me-3 quantity-input" id="inputQuantity" type="number" value="1" min="1" max="5" />
+                            <button class="btn btn-reserve flex-shrink-0" type="button">
                                 <i class="bi-cart-fill me-1"></i> Reservar Par
                             </button>
                         </div>
-
-    </header>
-    <section class="py-5" id="producto-info">
-        <div class="container px-4 px-lg-5 my-5">
-            <div class="row gx-4 gx-lg-5 align-items-center">
-                <div class="col-md-6"><img class="card-img-top mb-5 mb-md-0"
-                        src="https://dummyimage.com/600x700/dee2e6/6c757d.jpg" alt="Imagen Jordan 1 Principal" /></div>
-                <div class="col-md-6">
-                    <div class="small mb-1">SKU: J1-CHICAGO-2015</div>
-                    <h1 class="display-5 fw-bolder">Air Jordan 1 Retro High</h1>
-                    <div class="fs-5 mb-5">
-                        <span>$180.00</span>
-                    </div>
-                    <p class="lead">Un ícono de la cultura sneaker. Con su diseño clásico y materiales de primera
-                        calidad, las Jordan 1 no solo ofrecen rendimiento en la cancha, sino que dominan las calles.</p>
-                    <div class="d-flex">
-                        <input class="form-control text-center me-3" id="inputQuantity" type="num" value="1"
-                            style="max-width: 3rem" />
-                        <button class="btn btn-outline-dark flex-shrink-0" type="button">
-                            <i class="bi-cart-fill me-1"></i> Añadir al carrito
-                        </button>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
     <!-- ======================================================== -->
     <!-- FIN SECCIÓN SNAIDER -->
     <!-- ======================================================== -->
