@@ -1,0 +1,20 @@
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Configuraciones de editores e INDEs
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+#Archivos de logs y temporales
+*.log
+npm-debug.log*
+yarn-debug.log*
+
+#Archivos temporales de compilacion o respaldos
+*.tmp
+*.bak
+*~
