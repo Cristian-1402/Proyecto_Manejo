@@ -1,37 +1,24 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="description" content="Landing page de Jordan 1 - Proyecto colaborativo GitFlow" />
     <meta name="author" content="Equipo de Desarrollo - UTA" />
     <title>Jordan 1 - Exclusividad y Estilo</title>
-    <!-- Favicon-->
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-    <!-- Bootstrap icons-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
-    <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
-
-    <!-- Estilos modulares del equipo -->
     <link href="css/header-hero.css" rel="stylesheet" />
     <link href="css/info.css" rel="stylesheet" />
     <link href="css/features.css" rel="stylesheet" />
     <link href="css/gallery.css" rel="stylesheet" />
     <link href="css/models.css" rel="stylesheet" />
     <link href="css/footer.css" rel="stylesheet" />
-    <link href="css/base.css" rel="stylesheet" />
 </head>
-
 <body>
 
-    <!-- ======================================================== -->
-    <!-- INICIO SECCIÓN CRISTIAN - HEADER/NAV Y HERO -->
-    <!-- ======================================================== -->
-    <!-- Cristian, modifica la barra de navegación y agrega un banner Hero si lo deseas -->
     <header>
-        <!-- Barra de Navegación -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
             <div class="container px-4 px-lg-5">
                 <a class="navbar-brand fw-bold text-uppercase text-danger" href="#!">Jordan 1</a>
@@ -55,7 +42,7 @@
                 </div>
             </div>
         </nav>
-        <!-- Sección Hero -->
+        
         <div class="hero-section bg-dark text-white text-center">
             <div class="container px-4 px-lg-5 my-5">
                 <h1 class="display-3 fw-bolder text-uppercase">La Leyenda Continúa</h1>
@@ -63,54 +50,43 @@
                 <a href="#producto-info" class="btn btn-danger btn-lg text-uppercase fw-bold rounded-0 px-4 py-2">Descubrir Retro High</a>
             </div>
         </div>
+    </header>
 
-        <!-- ======================================================== -->
-        <!-- FIN SECCIÓN CRISTIAN -->
-        <!-- ======================================================== -->
-
-        <!-- ======================================================== -->
-        <!-- INICIO SECCIÓN SNAIDER - INFORMACIÓN DEL PRODUCTO -->
-        <!-- ======================================================== -->
-      <section class="py-5" id="producto-info">
-            <div class="container px-4 px-lg-5 my-5">
-                <div class="row gx-4 gx-lg-5 align-items-center">
-                    <div class="col-md-6">
-                        <div class="product-card-visual">
-                            <img class="img-fluid" 
-                                 src="https://images.unsplash.com/photo-1552346154-21d32810aba3?auto=format&fit=crop&w=700&q=80" 
-                                 alt="Zapatilla Air Jordan 1 Retro High Chicago vista lateral en cuero rojo y blanco" 
-                                 loading="eager" />
-                        </div>
+    <section class="py-5" id="producto-info">
+        <div class="container px-4 px-lg-5 my-5">
+            <div class="row gx-4 gx-lg-5 align-items-center">
+                <div class="col-md-6 text-center">
+                    <img class="img-fluid rounded mb-5 mb-md-0 shadow-lg"
+                        src="https://images.unsplash.com/photo-1552346154-21d32810aba3?auto=format&fit=crop&w=700&q=80"
+                        alt="Zapatilla Air Jordan 1 Retro High Chicago vista lateral en cuero rojo y blanco"
+                        loading="eager" />
+                </div>
+                <div class="col-md-6">
+                    <div class="badge bg-danger text-white mb-2 fs-6">Lanzamiento Exclusivo</div>
+                    <div class="small text-muted mb-1">SKU: J1-CHICAGO-2015 | Edición de Colección</div>
+                    <h1 class="display-5 fw-bolder text-dark">Air Jordan 1 Retro High OG</h1>
+                    <div class="fs-4 mb-3 text-danger fw-bold">
+                        <span>$180.00 USD</span>
                     </div>
-                    <div class="col-md-6 mt-4 mt-md-0">
-                        <span class="badge-jordan mb-2">Lanzamiento Exclusivo</span>
-                        <div class="sku-tag mb-1">SKU: J1-CHICAGO-2015 | Edición de Colección</div>
-                        <h1 class="product-title mb-2">Air Jordan 1 Retro High OG</h1>
-                        <div class="price-tag mb-3">
-                            <span>$180.00 USD</span>
-                        </div>
-                        <p class="product-description mb-4">
-                            Diseñadas originalmente para Michael Jordan en 1985, las Air Jordan 1 revolucionaron las reglas de la NBA y transformaron la cultura del calzado urbano. Confeccionadas en cuero de grano superior, cuello acolchado de perfil alto y la emblemática unidad Air-Sole encapsulada en el talón para una amortiguación duradera.
-                        </p>
-                        <div class="d-flex align-items-center action-box">
-                            <label for="inputQuantity" class="me-2 fw-semibold">Cantidad:</label>
-                            <input class="form-control text-center me-3 quantity-input" id="inputQuantity" type="number" value="1" min="1" max="5" />
-                            <button class="btn btn-reserve flex-shrink-0" type="button">
-                                <i class="bi-cart-fill me-1"></i> Reservar Par
-                            </button>
-                        </div>
+                    <p class="lead text-secondary">
+                        Diseñadas originalmente para Michael Jordan en 1985, las Air Jordan 1 revolucionaron las
+                        reglas de la NBA y transformaron la cultura del calzado urbano. Confeccionadas en cuero de
+                        grano superior, cuello acolchado de perfil alto y la emblemática unidad Air-Sole encapsulada
+                        en el talón para una amortiguación duradera.
+                    </p>
+                    <div class="d-flex align-items-center mt-4">
+                        <label for="inputQuantity" class="me-2 fw-semibold">Cantidad:</label>
+                        <input class="form-control text-center me-3" id="inputQuantity" type="number" value="1"
+                            min="1" max="5" style="max-width: 4.5rem" />
+                        <button class="btn btn-dark btn-lg flex-shrink-0" type="button">
+                            <i class="bi-cart-fill me-1"></i> Reservar Par
+                        </button>
                     </div>
                 </div>
             </div>
-        </section>
-    <!-- ======================================================== -->
-    <!-- FIN SECCIÓN SNAIDER -->
-    <!-- ======================================================== -->
+        </div>
+    </section>
 
-
-    <!-- ======================================================== -->
-    <!-- INICIO SECCIÓN CESAR - CARACTERÍSTICAS TÉCNICAS -->
-    <!-- ======================================================== -->
     <section class="py-5 bg-light" id="caracteristicas">
         <div class="container px-4 px-lg-5 mt-5">
             <h2 class="text-center mb-5 fw-bolder">INGENIERÍA CLÁSICA</h2>
@@ -139,14 +115,7 @@
             </div>
         </div>
     </section>
-    <!-- ======================================================== -->
-    <!-- FIN SECCIÓN CESAR -->
-    <!-- ======================================================== -->
 
-
-    <!-- ======================================================== -->
-    <!-- INICIO SECCIÓN JOEL - GALERÍA VISUAL -->
-    <!-- ======================================================== -->
     <section class="py-5" id="galeria">
         <div class="container px-4 px-lg-5 mt-5">
             <div class="text-center mb-5">
@@ -158,7 +127,6 @@
                 </p>
             </div>
 
-            <!-- Filtros interactivos por ángulo de vista -->
             <div class="d-flex flex-wrap justify-content-center gap-2 mb-4" id="gallery-filters" role="group"
                 aria-label="Filtros de galería">
                 <button type="button" class="btn btn-outline-dark btn-sm active px-3 rounded-pill gallery-filter-btn"
@@ -179,14 +147,10 @@
                 </button>
             </div>
 
-            <!-- Visor Principal / Featured View -->
             <div class="row justify-content-center mb-4">
                 <div class="col-lg-10">
-                    <div
-                        class="gallery-main-display position-relative bg-light rounded-4 overflow-hidden border shadow-sm text-center p-4">
-                        <span
-                            class="badge bg-danger position-absolute top-0 start-0 m-3 px-3 py-2 text-uppercase fw-semibold"
-                            id="gallery-badge">
+                    <div class="gallery-main-display position-relative bg-light rounded-4 overflow-hidden border shadow-sm text-center p-4">
+                        <span class="badge bg-danger position-absolute top-0 start-0 m-3 px-3 py-2 text-uppercase fw-semibold" id="gallery-badge">
                             Vista Principal
                         </span>
                         <img id="gallery-main-img" class="img-fluid rounded-3"
@@ -194,18 +158,14 @@
                             alt="Air Jordan 1 Vista Lateral Exterior"
                             style="max-height: 480px; object-fit: contain; transition: transform 0.3s ease;">
                         <div class="gallery-caption mt-3">
-                            <h5 class="fw-bold mb-1" id="gallery-caption-title">Air Jordan 1 High OG - Perfil
-                                Lateral</h5>
-                            <p class="text-muted small mb-0" id="gallery-caption-desc">Silueta clásica en cuero de
-                                alta gama con el emblemático Swoosh en negro.</p>
+                            <h5 class="fw-bold mb-1" id="gallery-caption-title">Air Jordan 1 High OG - Perfil Lateral</h5>
+                            <p class="text-muted small mb-0" id="gallery-caption-desc">Silueta clásica en cuero de alta gama con el emblemático Swoosh en negro.</p>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Cuadrícula / Miniaturas Interactivas (Thumbnails) -->
             <div class="row g-3 justify-content-center" id="gallery-thumbnails">
-                <!-- Item 1: Lateral Exterior -->
                 <div class="col-6 col-sm-4 col-md-3 gallery-item" data-category="lateral">
                     <div class="card gallery-thumb-card h-100 border rounded-3 p-2 shadow-sm text-center active"
                         role="button" tabindex="0"
@@ -223,7 +183,6 @@
                     </div>
                 </div>
 
-                <!-- Item 2: Frontal y Par -->
                 <div class="col-6 col-sm-4 col-md-3 gallery-item" data-category="frontal">
                     <div class="card gallery-thumb-card h-100 border rounded-3 p-2 shadow-sm text-center" role="button"
                         tabindex="0"
@@ -241,7 +200,6 @@
                     </div>
                 </div>
 
-                <!-- Item 3: Ángulo Cenital / Superior -->
                 <div class="col-6 col-sm-4 col-md-3 gallery-item" data-category="frontal">
                     <div class="card gallery-thumb-card h-100 border rounded-3 p-2 shadow-sm text-center" role="button"
                         tabindex="0"
@@ -254,12 +212,11 @@
                             style="height: 120px; object-fit: cover;">
                         <div class="card-body p-2">
                             <span class="small fw-semibold d-block text-truncate">Vista Superior</span>
-                            <span class="badge bg-light text-dark border">Frontal</span>
+                            <span class="badge bg-light text-dark border">Superior</span>
                         </div>
                     </div>
                 </div>
 
-                <!-- Item 4: Detalle Costuras y Cuero -->
                 <div class="col-6 col-sm-4 col-md-3 gallery-item" data-category="detalle">
                     <div class="card gallery-thumb-card h-100 border rounded-3 p-2 shadow-sm text-center" role="button"
                         tabindex="0"
@@ -279,20 +236,12 @@
             </div>
         </div>
     </section>
-    <!-- ======================================================== -->
-    <!-- FIN SECCIÓN JOEL -->
-    <!-- ======================================================== -->
 
-
-    <!-- ======================================================== -->
-    <!-- INICIO SECCIÓN DAKY - MODELOS Y COLORES (OFERTAS) -->
-    <!-- ======================================================== -->
     <section class="py-5 bg-light" id="modelos">
         <div class="container px-4 px-lg-5 mt-5">
             <h2 class="fw-bolder mb-4 text-center">Otros Modelos y Colores</h2>
             <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
 
-                <!-- Tarjeta 1: Jordan 1 Mid -->
                 <div class="col mb-5">
                     <div class="card h-100 shadow-sm">
                         <img class="card-img-top"
@@ -312,13 +261,11 @@
                             </div>
                         </div>
                         <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Ver opciones</a>
-                            </div>
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Ver opciones</a></div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Tarjeta 2: Jordan 1 Low -->
                 <div class="col mb-5">
                     <div class="card h-100 shadow-sm">
                         <div class="badge bg-danger text-white position-absolute" style="top: 0.5rem; right: 0.5rem">
@@ -341,17 +288,15 @@
                             </div>
                         </div>
                         <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Ver opciones</a>
-                            </div>
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Ver opciones</a></div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Tarjeta 3: Jordan 1 Retro High -->
                 <div class="col mb-5">
                     <div class="card h-100 shadow-sm">
                         <img class="card-img-top"
-                            src="https://images.unsplash.com/photo-1607522370275-f14206abe5d3?auto=format&fit=crop&w=450&q=80"
+                            src="https://images.unsplash.com/photo-1552346154-21d32810aba3?auto=format&fit=crop&w=450&q=80"
                             alt="Jordan 1 Retro High" />
                         <div class="card-body p-4">
                             <div class="text-center">
@@ -366,13 +311,11 @@
                             </div>
                         </div>
                         <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Ver opciones</a>
-                            </div>
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Ver opciones</a></div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Tarjeta 4: Jordan 1 Elevate -->
                 <div class="col mb-5">
                     <div class="card h-100 shadow-sm">
                         <img class="card-img-top"
@@ -392,8 +335,7 @@
                             </div>
                         </div>
                         <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Ver opciones</a>
-                            </div>
+                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" href="#">Ver opciones</a></div>
                         </div>
                     </div>
                 </div>
@@ -401,14 +343,7 @@
             </div>
         </div>
     </section>
-    <!-- ======================================================== -->
-    <!-- FIN SECCIÓN DAKY -->
-    <!-- ======================================================== -->
 
-
-    <!-- ======================================================== -->
-    <!-- INICIO SECCIÓN SONIA - FOOTER Y CTA -->
-    <!-- ======================================================== -->
     <section class="sonia-cta bg-danger text-white py-5" id="sonia-cta" aria-labelledby="sonia-cta-title">
         <div class="container px-4 px-lg-5">
             <p class="sonia-cta__eyebrow text-uppercase fw-bold mb-3">Desde la cancha. Para tu estilo.</p>
@@ -422,7 +357,7 @@
                     Explorar modelos <i class="bi bi-arrow-up-right ms-2" aria-hidden="true"></i>
                 </a>
                 <a class="sonia-cta__secondary btn btn-outline-light fw-bold px-4 py-3" href="#galeria">
-                    Ver galer&iacute;a <i class="bi bi-arrow-right ms-2" aria-hidden="true"></i>
+                    Ver galería <i class="bi bi-arrow-right ms-2" aria-hidden="true"></i>
                 </a>
             </div>
         </div>
@@ -435,8 +370,8 @@
                     <h2 class="sonia-footer__brand h3 fw-bold mb-3">Jordan 1</h2>
                     <p class="sonia-footer__tagline lead mb-2">El legado sigue en tus pasos.</p>
                     <p class="sonia-footer__description text-white-50 mb-4">
-                        Cultura, historia y dise&ntilde;o alrededor de una silueta ic&oacute;nica.
-                        Un proyecto acad&eacute;mico creado por estudiantes de la UTA.
+                        Cultura, historia y diseño alrededor de una silueta icónica.
+                        Un proyecto académico creado por estudiantes de la UTA.
                     </p>
                 </div>
                 <nav class="sonia-footer__nav mb-4" aria-labelledby="sonia-footer-nav-title">
@@ -444,7 +379,7 @@
                     <ul class="sonia-footer__links list-unstyled d-grid gap-2 mb-0">
                         <li><a class="text-white" href="#producto-info">El producto</a></li>
                         <li><a class="text-white" href="#caracteristicas">Detalles y materiales</a></li>
-                        <li><a class="text-white" href="#galeria">Galer&iacute;a</a></li>
+                        <li><a class="text-white" href="#galeria">Galería</a></li>
                         <li><a class="text-white" href="#modelos">Modelos y colores</a></li>
                     </ul>
                 </nav>
@@ -455,30 +390,28 @@
                             <a class="text-white" href="https://www.nike.com/jordan" target="_blank"
                                 rel="noopener noreferrer">
                                 Jordan en Nike <i class="bi bi-box-arrow-up-right ms-1" aria-hidden="true"></i>
-                                <span class="visually-hidden">(abre en una pesta&ntilde;a nueva)</span>
+                                <span class="visually-hidden">(abre en una pestaña nueva)</span>
                             </a>
                         </li>
                         <li>
                             <a class="text-white" href="https://www.nike.com/jordan/air-jordan-1" target="_blank"
                                 rel="noopener noreferrer">
                                 Archivo Air Jordan 1 <i class="bi bi-box-arrow-up-right ms-1" aria-hidden="true"></i>
-                                <span class="visually-hidden">(abre en una pesta&ntilde;a nueva)</span>
+                                <span class="visually-hidden">(abre en una pestaña nueva)</span>
                             </a>
                         </li>
                     </ul>
-                    <p class="small text-white-50 mb-0">Sitios oficiales externos. Se abren en una pesta&ntilde;a nueva.
-                    </p>
+                    <p class="small text-white-50 mb-0">Sitios oficiales externos. Se abren en una pestaña nueva.</p>
                 </nav>
                 <form class="sonia-newsletter mb-4" id="newsletterForm" aria-labelledby="sonia-newsletter-title"
                     aria-describedby="sonia-newsletter-note">
                     <h3 class="h5 fw-bold mb-3" id="sonia-newsletter-title">Jordan 1 Club</h3>
                     <p class="small text-white-50" id="sonia-newsletter-note">
-                        Formulario de demostraci&oacute;n acad&eacute;mica. No realiza suscripciones reales.
+                        Formulario de demostración académica. No realiza suscripciones reales.
                     </p>
-                    <!-- JavaScript habilitara los campos tras interceptar el envio. -->
                     <fieldset class="sonia-newsletter__fields" id="newsletterFields" disabled>
-                        <legend class="visually-hidden">Registro de demostraci&oacute;n</legend>
-                        <label class="form-label" for="newsletterEmail">Correo electr&oacute;nico</label>
+                        <legend class="visually-hidden">Registro de demostración</legend>
+                        <label class="form-label" for="newsletterEmail">Correo electrónico</label>
                         <input class="sonia-newsletter__input form-control mb-3" id="newsletterEmail" name="email"
                             type="email" placeholder="nombre@example.com" autocomplete="off" maxlength="254"
                             aria-describedby="sonia-newsletter-privacy" required />
@@ -487,31 +420,24 @@
                         </button>
                     </fieldset>
                     <p class="sonia-newsletter__privacy small text-white-50 mt-3 mb-0" id="sonia-newsletter-privacy">
-                        Usa un correo ficticio para la prueba. Este formulario no env&iacute;a ni almacena
-                        tu correo y no genera una suscripci&oacute;n.
+                        Usa un correo ficticio para la prueba. Este formulario no envía ni almacena
+                        tu correo y no genera una suscripción.
                     </p>
                 </form>
             </div>
             <div class="sonia-footer__bottom border-top border-secondary pt-3">
                 <p class="sonia-footer__disclaimer small text-white-50 mb-3">
-                    Proyecto acad&eacute;mico independiente de estudiantes de la UTA.
-                    No es una tienda oficial ni est&aacute; afiliado a Nike o Jordan.
+                    Proyecto académico independiente de estudiantes de la UTA.
+                    No es una tienda oficial ni está afiliado a Nike o Jordan.
                     No se procesan compras ni pagos en este sitio.
                 </p>
                 <p class="small mb-0">Copyright &copy; Equipo Jordan 1 UTA 2026</p>
             </div>
         </div>
     </footer>
-    <!-- ======================================================== -->
-    <!-- FIN SECCIÓN SONIA -->
-    <!-- ======================================================== -->
 
-    <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
     <script src="js/form.js" defer></script>
-    <script src="js/gallery.js" defer></script>
 </body>
-
 </html>
