@@ -1,0 +1,231 @@
+﻿/* ========================================================
+   ESTILOS SECCIÃ“N GALERÃA VISUAL - JOEL
+   Proyecto Landing Page Air Jordan 1 (UTA)
+   ======================================================== */
+
+:root {
+    --gallery-red: #dc3545;
+    --gallery-red-dark: #b02a37;
+    --gallery-dark: #171717;
+    --gallery-gray-bg: #f8f9fa;
+    --gallery-card-bg: #ffffff;
+    --gallery-border-color: #e5e7eb;
+    --gallery-shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.06);
+    --gallery-shadow-md: 0 8px 24px rgba(0, 0, 0, 0.12);
+    --gallery-radius: 1rem;
+    --gallery-transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+/* --- Layout del contenedor principal --- */
+#galeria {
+    background: linear-gradient(180deg, #ffffff 0%, #fdfdfd 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+#galeria .tracking-wider {
+    letter-spacing: 2px;
+}
+
+/* --- Botones de filtro de categorÃ­as --- */
+#gallery-filters {
+    gap: 0.6rem !important;
+}
+
+.gallery-filter-btn {
+    font-weight: 500;
+    font-size: 0.875rem;
+    border-color: var(--gallery-border-color);
+    color: #495057;
+    background-color: #ffffff;
+    transition: var(--gallery-transition);
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.gallery-filter-btn:hover {
+    color: var(--gallery-red);
+    border-color: var(--gallery-red);
+    background-color: #fff5f5;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+}
+
+.gallery-filter-btn.active,
+.gallery-filter-btn.active:hover {
+    background-color: var(--gallery-red) !important;
+    border-color: var(--gallery-red) !important;
+    color: #ffffff !important;
+    box-shadow: 0 4px 14px rgba(220, 53, 69, 0.4);
+    transform: translateY(-1px);
+}
+
+.gallery-filter-btn i {
+    transition: transform 0.2s ease;
+}
+
+.gallery-filter-btn:hover i {
+    transform: scale(1.15);
+}
+
+/* --- Visor Principal (Featured View) --- */
+.gallery-main-display {
+    background: radial-gradient(circle at center, #ffffff 40%, #f8f9fa 100%) !important;
+    border: 1px solid var(--gallery-border-color) !important;
+    box-shadow: var(--gallery-shadow-md) !important;
+    border-radius: var(--gallery-radius) !important;
+    min-height: 420px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: var(--gallery-transition);
+}
+
+#gallery-badge {
+    letter-spacing: 1px;
+    font-size: 0.75rem;
+    box-shadow: 0 4px 10px rgba(220, 53, 69, 0.35);
+    background-color: var(--gallery-red) !important;
+    border-radius: 6px;
+    z-index: 2;
+}
+
+#gallery-main-img {
+    max-height: 420px;
+    width: auto;
+    object-fit: contain;
+    filter: drop-shadow(0 12px 20px rgba(0, 0, 0, 0.18));
+    transition: transform 0.35s cubic-bezier(0.25, 0.8, 0.25, 1), opacity 0.25s ease;
+}
+
+.gallery-caption {
+    width: 100%;
+    max-width: 650px;
+    border-top: 1px solid rgba(0, 0, 0, 0.06);
+    padding-top: 1rem;
+}
+
+#gallery-caption-title {
+    color: var(--gallery-dark);
+    letter-spacing: 0.5px;
+}
+
+#gallery-caption-desc {
+    color: #6c757d;
+    line-height: 1.5;
+}
+
+/* --- Miniaturas Interactivas (Thumbnails) --- */
+.gallery-thumb-card {
+    background-color: var(--gallery-card-bg);
+    border: 2px solid transparent;
+    border-radius: 12px !important;
+    cursor: pointer;
+    overflow: hidden;
+    transition: var(--gallery-transition);
+    user-select: none;
+}
+
+.gallery-thumb-card .card-img-top {
+    border-radius: 8px;
+    transition: transform 0.4s ease, filter 0.3s ease;
+}
+
+.gallery-thumb-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--gallery-shadow-md) !important;
+    border-color: rgba(220, 53, 69, 0.3);
+}
+
+.gallery-thumb-card:hover .card-img-top {
+    transform: scale(1.05);
+}
+
+.gallery-thumb-card .card-body span.fw-semibold {
+    color: var(--gallery-dark);
+    font-size: 0.85rem;
+}
+
+/* Indicador de miniatura seleccionada / activa */
+.gallery-thumb-card.active {
+    border-color: var(--gallery-red) !important;
+    background-color: #fff9f9;
+    box-shadow: 0 0 0 3px rgba(220, 53, 69, 0.25), var(--gallery-shadow-md) !important;
+    transform: translateY(-2px);
+}
+
+.gallery-thumb-card.active .badge {
+    background-color: var(--gallery-red) !important;
+    color: #ffffff !important;
+    border-color: var(--gallery-red) !important;
+}
+
+.gallery-thumb-card.active .card-img-top {
+    filter: brightness(1.05);
+}
+
+/* --- Transiciones y Efecto Fade --- */
+.gallery-img-fade-out {
+    opacity: 0.1 !important;
+    transform: scale(0.97) !important;
+}
+
+.gallery-img-fade-in {
+    opacity: 1 !important;
+    transform: scale(1) !important;
+}
+
+/* --- AdaptaciÃ³n a Dispositivos MÃ³viles (Responsive) --- */
+@media (max-width: 991.98px) {
+    .gallery-main-display {
+        min-height: 340px;
+        padding: 1.5rem !important;
+    }
+
+    #gallery-main-img {
+        max-height: 320px;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .gallery-main-display {
+        min-height: 280px;
+        padding: 1rem !important;
+    }
+
+    #gallery-main-img {
+        max-height: 240px;
+    }
+
+    #gallery-badge {
+        font-size: 0.68rem;
+        padding: 0.35rem 0.65rem !important;
+    }
+
+    .gallery-filter-btn {
+        font-size: 0.78rem;
+        padding: 0.35rem 0.75rem !important;
+    }
+
+    .gallery-thumb-card .card-img-top {
+        height: 100px !important;
+    }
+}
+
+/* --- Accesibilidad y NavegaciÃ³n por Teclado --- */
+.gallery-thumb-card:focus-visible,
+.gallery-filter-btn:focus-visible {
+    outline: 3px solid var(--gallery-red);
+    outline-offset: 3px;
+    box-shadow: 0 0 0 5px rgba(220, 53, 69, 0.25) !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .gallery-thumb-card,
+    .gallery-filter-btn,
+    #gallery-main-img,
+    .gallery-thumb-card .card-img-top {
+        transition: none !important;
+        transform: none !important;
+    }
+}

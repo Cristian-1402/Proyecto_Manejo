@@ -1,0 +1,78 @@
+@charset "UTF-8";
+/*!
+* Start Bootstrap - Shop Item v5.0.6 (https://startbootstrap.com/template/shop-item)
+* Copyright 2013-2023 Start Bootstrap
+* Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-shop-item/blob/master/LICENSE)
+*/
+/*!
+ * Bootstrap  v5.2.3 (https://getbootstrap.com/)
+ * Copyright 2011-2022 The Bootstrap Authors
+ * Copyright 2011-2022 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
+ */
+
+ :root {
+    --jordan-red: #E3000F;
+    --jordan-black: #111111;
+    --jordan-gray: #f8f9fa;
+}
+
+#caracteristicas {
+    background-color: var(--jordan-gray);
+    padding: 80px 0;
+}
+#caracteristicas h2 {
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    color: var(--jordan-black);
+    text-transform: uppercase;
+}
+
+.feature-box {
+    background: #ffffff;
+    padding: 40px 30px;
+    border-radius: 12px;
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.04);
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    height: 100%;
+}
+
+.feature-box:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 16px 32px rgba(227, 0, 15, 0.12);
+    border-color: rgba(227, 0, 15, 0.25);
+}
+
+.feature-icon {
+    font-size: 3rem;
+    color: var(--jordan-red);
+    margin-bottom: 20px;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+.feature-box:hover .feature-icon {
+    transform: scale(1.12);
+}
+
+.feature-box h4 {
+    font-weight: 700;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    color: var(--jordan-black);
+}
+.feature-box p {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #6c757d;
+}
+
+@media (max-width: 768px) {
+    #caracteristicas {
+        padding: 50px 0;
+    }
+    .feature-box {
+        padding: 30px 20px;
+        margin-bottom: 20px;
+    }
+}
