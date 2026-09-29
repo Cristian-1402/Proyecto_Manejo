@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="es">
 
 <head>
@@ -21,16 +21,17 @@
     <link href="css/gallery.css" rel="stylesheet" />
     <link href="css/models.css" rel="stylesheet" />
     <link href="css/footer.css" rel="stylesheet" />
+    <link href="css/base.css" rel="stylesheet" />
 </head>
 
 <body>
 
     <!-- ======================================================== -->
-    <!-- INICIO SECCIÃ“N CRISTIAN - HEADER/NAV Y HERO -->
+    <!-- INICIO SECCIÓN CRISTIAN - HEADER/NAV Y HERO -->
     <!-- ======================================================== -->
-    <!-- Cristian, modifica la barra de navegaciÃ³n y agrega un banner Hero si lo deseas -->
+    <!-- Cristian, modifica la barra de navegación y agrega un banner Hero si lo deseas -->
     <header>
-        <!-- Barra de NavegaciÃ³n -->
+        <!-- Barra de Navegación -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm">
             <div class="container px-4 px-lg-5">
                 <a class="navbar-brand fw-bold text-uppercase text-danger" href="#!">Jordan 1</a>
@@ -42,7 +43,7 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4 fw-bold">
                         <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Inicio</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#galeria">GalerÃ­a</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#galeria">Galería</a></li>
                         <li class="nav-item"><a class="nav-link" href="#modelos">Modelos</a></li>
                     </ul>
                     <form class="d-flex">
@@ -54,136 +55,112 @@
                 </div>
             </div>
         </nav>
-        <!-- SecciÃ³n Hero -->
+        <!-- Sección Hero -->
         <div class="hero-section bg-dark text-white text-center">
             <div class="container px-4 px-lg-5 my-5">
-                <h1 class="display-3 fw-bolder text-uppercase">La Leyenda ContinÃºa</h1>
-                <p class="lead fw-normal text-white-50 mb-4">El modelo que cambiÃ³ la cultura sneaker para siempre.</p>
+                <h1 class="display-3 fw-bolder text-uppercase">La Leyenda Continúa</h1>
+                <p class="lead fw-normal text-white-50 mb-4">El modelo que cambió la cultura sneaker para siempre.</p>
                 <a href="#producto-info" class="btn btn-danger btn-lg text-uppercase fw-bold rounded-0 px-4 py-2">Descubrir Retro High</a>
             </div>
         </div>
 
         <!-- ======================================================== -->
-        <!-- FIN SECCIÃ“N CRISTIAN -->
+        <!-- FIN SECCIÓN CRISTIAN -->
         <!-- ======================================================== -->
 
         <!-- ======================================================== -->
-        <!-- INICIO SECCIÃ“N SNAIDER - INFORMACIÃ“N DEL PRODUCTO -->
+        <!-- INICIO SECCIÓN SNAIDER - INFORMACIÓN DEL PRODUCTO -->
         <!-- ======================================================== -->
-        <section class="py-5" id="producto-info">
+      <section class="py-5" id="producto-info">
             <div class="container px-4 px-lg-5 my-5">
                 <div class="row gx-4 gx-lg-5 align-items-center">
-                    <div class="col-md-6 text-center">
-                        <img class="img-fluid rounded mb-5 mb-md-0 shadow-lg"
-                            src="https://images.unsplash.com/photo-1552346154-21d32810aba3?auto=format&fit=crop&w=700&q=80"
-                            alt="Zapatilla Air Jordan 1 Retro High Chicago vista lateral en cuero rojo y blanco"
-                            loading="eager" />
-                    </div>
                     <div class="col-md-6">
-                        <div class="badge bg-danger text-white mb-2 fs-6">Lanzamiento Exclusivo</div>
-                        <div class="small text-muted mb-1">SKU: J1-CHICAGO-2015 | EdiciÃ³n de ColecciÃ³n</div>
-                        <h1 class="display-5 fw-bolder text-dark">Air Jordan 1 Retro High OG</h1>
-                        <div class="fs-4 mb-3 text-danger fw-bold">
+                        <div class="product-card-visual">
+                            <img class="img-fluid" 
+                                 src="https://images.unsplash.com/photo-1552346154-21d32810aba3?auto=format&fit=crop&w=700&q=80" 
+                                 alt="Zapatilla Air Jordan 1 Retro High Chicago vista lateral en cuero rojo y blanco" 
+                                 loading="eager" />
+                        </div>
+                    </div>
+                    <div class="col-md-6 mt-4 mt-md-0">
+                        <span class="badge-jordan mb-2">Lanzamiento Exclusivo</span>
+                        <div class="sku-tag mb-1">SKU: J1-CHICAGO-2015 | Edición de Colección</div>
+                        <h1 class="product-title mb-2">Air Jordan 1 Retro High OG</h1>
+                        <div class="price-tag mb-3">
                             <span>$180.00 USD</span>
                         </div>
-                        <p class="lead text-secondary">
-                            DiseÃ±adas originalmente para Michael Jordan en 1985, las Air Jordan 1 revolucionaron las
-                            reglas de la NBA y transformaron la cultura del calzado urbano. Confeccionadas en cuero de
-                            grano superior, cuello acolchado de perfil alto y la emblemÃ¡tica unidad Air-Sole encapsulada
-                            en el talÃ³n para una amortiguaciÃ³n duradera.
+                        <p class="product-description mb-4">
+                            Diseñadas originalmente para Michael Jordan en 1985, las Air Jordan 1 revolucionaron las reglas de la NBA y transformaron la cultura del calzado urbano. Confeccionadas en cuero de grano superior, cuello acolchado de perfil alto y la emblemática unidad Air-Sole encapsulada en el talón para una amortiguación duradera.
                         </p>
-                        <div class="d-flex align-items-center mt-4">
+                        <div class="d-flex align-items-center action-box">
                             <label for="inputQuantity" class="me-2 fw-semibold">Cantidad:</label>
-                            <input class="form-control text-center me-3" id="inputQuantity" type="number" value="1"
-                                min="1" max="5" style="max-width: 4.5rem" />
-                            <button class="btn btn-dark btn-lg flex-shrink-0" type="button">
+                            <input class="form-control text-center me-3 quantity-input" id="inputQuantity" type="number" value="1" min="1" max="5" />
+                            <button class="btn btn-reserve flex-shrink-0" type="button">
                                 <i class="bi-cart-fill me-1"></i> Reservar Par
                             </button>
                         </div>
-
-    </header>
-    <section class="py-5" id="producto-info">
-        <div class="container px-4 px-lg-5 my-5">
-            <div class="row gx-4 gx-lg-5 align-items-center">
-                <div class="col-md-6"><img class="card-img-top mb-5 mb-md-0"
-                        src="https://dummyimage.com/600x700/dee2e6/6c757d.jpg" alt="Imagen Jordan 1 Principal" /></div>
-                <div class="col-md-6">
-                    <div class="small mb-1">SKU: J1-CHICAGO-2015</div>
-                    <h1 class="display-5 fw-bolder">Air Jordan 1 Retro High</h1>
-                    <div class="fs-5 mb-5">
-                        <span>$180.00</span>
-                    </div>
-                    <p class="lead">Un Ã­cono de la cultura sneaker. Con su diseÃ±o clÃ¡sico y materiales de primera
-                        calidad, las Jordan 1 no solo ofrecen rendimiento en la cancha, sino que dominan las calles.</p>
-                    <div class="d-flex">
-                        <input class="form-control text-center me-3" id="inputQuantity" type="num" value="1"
-                            style="max-width: 3rem" />
-                        <button class="btn btn-outline-dark flex-shrink-0" type="button">
-                            <i class="bi-cart-fill me-1"></i> AÃ±adir al carrito
-                        </button>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
     <!-- ======================================================== -->
-    <!-- FIN SECCIÃ“N SNAIDER -->
+    <!-- FIN SECCIÓN SNAIDER -->
     <!-- ======================================================== -->
 
 
     <!-- ======================================================== -->
-    <!-- INICIO SECCIÃ“N CESAR - CARACTERÃSTICAS TÃ‰CNICAS -->
+    <!-- INICIO SECCIÓN CESAR - CARACTERÍSTICAS TÉCNICAS -->
     <!-- ======================================================== -->
     <section class="py-5 bg-light" id="caracteristicas">
         <div class="container px-4 px-lg-5 mt-5">
-            <h2 class="text-center mb-5 fw-bolder">INGENIERÃA CLÃSICA</h2>
+            <h2 class="text-center mb-5 fw-bolder">INGENIERÍA CLÁSICA</h2>
             <div class="row gx-4 gx-lg-5 justify-content-center text-center">
                 <div class="col-lg-4 col-md-6 mb-5">
                     <div class="feature-box">
                         <i class="bi bi-star feature-icon"></i>
                         <h4 class="fw-bolder">Cuero Premium</h4>
-                        <p class="text-muted">Materiales duraderos que envejecen con estilo, adaptÃ¡ndose a tu pie.</p>
+                        <p class="text-muted">Materiales duraderos que envejecen con estilo, adaptándose a tu pie.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-5">
                     <div class="feature-box">
                         <i class="bi bi-wind feature-icon"></i>
-                        <h4 class="fw-bolder">TecnologÃ­a Air</h4>
-                        <p class="text-muted">Unidad Air-Sole encapsulada en el talÃ³n para una amortiguaciÃ³n ligera.</p>
+                        <h4 class="fw-bolder">Tecnología Air</h4>
+                        <p class="text-muted">Unidad Air-Sole encapsulada en el talón para una amortiguación ligera.</p>
                     </div>
                 </div>
                 <div class="col-lg-4 col-md-6 mb-5">
                     <div class="feature-box">
                         <i class="bi bi-record-circle feature-icon"></i>
-                        <h4 class="fw-bolder">TracciÃ³n SÃ³lida</h4>
-                        <p class="text-muted">Suela de goma con punto de pivote clÃ¡sico para un agarre insuperable.</p>
+                        <h4 class="fw-bolder">Tracción Sólida</h4>
+                        <p class="text-muted">Suela de goma con punto de pivote clásico para un agarre insuperable.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
     <!-- ======================================================== -->
-    <!-- FIN SECCIÃ“N CESAR -->
+    <!-- FIN SECCIÓN CESAR -->
     <!-- ======================================================== -->
 
 
     <!-- ======================================================== -->
-    <!-- INICIO SECCIÃ“N JOEL - GALERÃA VISUAL -->
+    <!-- INICIO SECCIÓN JOEL - GALERÍA VISUAL -->
     <!-- ======================================================== -->
     <section class="py-5" id="galeria">
         <div class="container px-4 px-lg-5 mt-5">
             <div class="text-center mb-5">
                 <span class="text-danger fw-bold text-uppercase tracking-wider small">Perspectivas Exclusivas</span>
-                <h2 class="fw-bolder display-6 mt-1">GalerÃ­a Oficial Air Jordan 1</h2>
+                <h2 class="fw-bolder display-6 mt-1">Galería Oficial Air Jordan 1</h2>
                 <p class="text-muted mx-auto" style="max-width: 600px;">
-                    Explora cada detalle, textura y costura desde mÃºltiples Ã¡ngulos del diseÃ±o legendario que
-                    revolucionÃ³ el baloncesto y la moda urbana.
+                    Explora cada detalle, textura y costura desde múltiples ángulos del diseño legendario que
+                    revolucionó el baloncesto y la moda urbana.
                 </p>
             </div>
 
-            <!-- Filtros interactivos por Ã¡ngulo de vista -->
+            <!-- Filtros interactivos por ángulo de vista -->
             <div class="d-flex flex-wrap justify-content-center gap-2 mb-4" id="gallery-filters" role="group"
-                aria-label="Filtros de galerÃ­a">
+                aria-label="Filtros de galería">
                 <button type="button" class="btn btn-outline-dark btn-sm active px-3 rounded-pill gallery-filter-btn"
                     data-filter="all">
                     <i class="bi bi-grid-fill me-1"></i> Todos
@@ -219,14 +196,14 @@
                         <div class="gallery-caption mt-3">
                             <h5 class="fw-bold mb-1" id="gallery-caption-title">Air Jordan 1 High OG - Perfil
                                 Lateral</h5>
-                            <p class="text-muted small mb-0" id="gallery-caption-desc">Silueta clÃ¡sica en cuero de
-                                alta gama con el emblemÃ¡tico Swoosh en negro.</p>
+                            <p class="text-muted small mb-0" id="gallery-caption-desc">Silueta clásica en cuero de
+                                alta gama con el emblemático Swoosh en negro.</p>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- CuadrÃ­cula / Miniaturas Interactivas (Thumbnails) -->
+            <!-- Cuadrícula / Miniaturas Interactivas (Thumbnails) -->
             <div class="row g-3 justify-content-center" id="gallery-thumbnails">
                 <!-- Item 1: Lateral Exterior -->
                 <div class="col-6 col-sm-4 col-md-3 gallery-item" data-category="lateral">
@@ -234,7 +211,7 @@
                         role="button" tabindex="0"
                         data-full-src="https://images.unsplash.com/photo-1552346154-21d32810aba3?auto=format&fit=crop&w=1200&q=80"
                         data-title="Air Jordan 1 High OG - Perfil Lateral"
-                        data-desc="Silueta clÃ¡sica en cuero de alta gama con el emblemÃ¡tico Swoosh en negro."
+                        data-desc="Silueta clásica en cuero de alta gama con el emblemático Swoosh en negro."
                         data-badge="Lateral">
                         <img src="https://images.unsplash.com/photo-1552346154-21d32810aba3?auto=format&fit=crop&w=400&q=80"
                             class="card-img-top rounded-2" alt="Miniatura Perfil Lateral Jordan 1"
@@ -252,7 +229,7 @@
                         tabindex="0"
                         data-full-src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=1200&q=80"
                         data-title="Air Jordan 1 - Vista Frontal del Par"
-                        data-desc="Puntera perforada para mÃ¡xima transpirabilidad y lengÃ¼eta acolchada con etiqueta Nike Air."
+                        data-desc="Puntera perforada para máxima transpirabilidad y lengüeta acolchada con etiqueta Nike Air."
                         data-badge="Frontal">
                         <img src="https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?auto=format&fit=crop&w=400&q=80"
                             class="card-img-top rounded-2" alt="Miniatura Vista Frontal Jordan 1"
@@ -264,7 +241,7 @@
                     </div>
                 </div>
 
-                <!-- Item 3: Ãngulo Cenital / Superior -->
+                <!-- Item 3: Ángulo Cenital / Superior -->
                 <div class="col-6 col-sm-4 col-md-3 gallery-item" data-category="frontal">
                     <div class="card gallery-thumb-card h-100 border rounded-3 p-2 shadow-sm text-center" role="button"
                         tabindex="0"
@@ -303,12 +280,12 @@
         </div>
     </section>
     <!-- ======================================================== -->
-    <!-- FIN SECCIÃ“N JOEL -->
+    <!-- FIN SECCIÓN JOEL -->
     <!-- ======================================================== -->
 
 
     <!-- ======================================================== -->
-    <!-- INICIO SECCIÃ“N DAKY - MODELOS Y COLORES (OFERTAS) -->
+    <!-- INICIO SECCIÓN DAKY - MODELOS Y COLORES (OFERTAS) -->
     <!-- ======================================================== -->
     <section class="py-5 bg-light" id="modelos">
         <div class="container px-4 px-lg-5 mt-5">
@@ -425,12 +402,12 @@
         </div>
     </section>
     <!-- ======================================================== -->
-    <!-- FIN SECCIÃ“N DAKY -->
+    <!-- FIN SECCIÓN DAKY -->
     <!-- ======================================================== -->
 
 
     <!-- ======================================================== -->
-    <!-- INICIO SECCIÃ“N SONIA - FOOTER Y CTA -->
+    <!-- INICIO SECCIÓN SONIA - FOOTER Y CTA -->
     <!-- ======================================================== -->
     <section class="sonia-cta bg-danger text-white py-5" id="sonia-cta" aria-labelledby="sonia-cta-title">
         <div class="container px-4 px-lg-5">
@@ -526,7 +503,7 @@
         </div>
     </footer>
     <!-- ======================================================== -->
-    <!-- FIN SECCIÃ“N SONIA -->
+    <!-- FIN SECCIÓN SONIA -->
     <!-- ======================================================== -->
 
     <!-- Bootstrap core JS-->

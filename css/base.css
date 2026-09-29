@@ -1,0 +1,28 @@
+/* ========================================================
+   TOKENS VISUALES BASE Y PALETA DE COLOR - EQUIPO JORDAN 1
+   ======================================================== */
+:root {
+    /* Paleta Oficial Chicago */
+    --jordan-red: #ce1141;
+    --jordan-black: #111111;
+    --jordan-dark-gray: #1f1f1f;
+    --jordan-light-gray: #f4f4f4;
+    --jordan-white: #ffffff;
+    --jordan-accent: #b20e36;
+
+    /* Tipografía y Textos */
+    --font-primary: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    --text-primary: #1a1a1a;
+    --text-secondary: #5a5a5a;
+
+    /* Elevaciones y Transiciones */
+    --card-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+    --card-shadow-hover: 0 16px 36px rgba(206, 17, 65, 0.2);
+    --transition-standard: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+body {
+    font-family: var(--font-primary);
+    color: var(--text-primary);
+    background-color: var(--jordan-white);
+}

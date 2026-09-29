@@ -10,6 +10,134 @@
  * Copyright 2011-2022 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+
+ /* ========================================================
+   SECCIÓN DE PRESENTACIÓN DEL PRODUCTO - SNAIDER
+   ======================================================== */
+#producto-info {
+    background: radial-gradient(circle at 10% 20%, rgba(206, 17, 65, 0.04) 0%, transparent 60%);
+    position: relative;
+    overflow: hidden;
+}
+
+/* 1. Tarjeta visual y contenedor de la zapatilla */
+#producto-info .product-card-visual {
+    background-color: var(--jordan-white);
+    border-radius: 18px;
+    padding: 1.5rem;
+    box-shadow: var(--card-shadow);
+    transition: var(--transition-standard);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+#producto-info .product-card-visual:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--card-shadow-hover);
+}
+
+#producto-info .product-card-visual img {
+    border-radius: 12px;
+    object-fit: cover;
+    max-height: 480px;
+    width: 100%;
+    transition: var(--transition-standard);
+}
+
+/* 2. Tipografía, badges y detalles de precio */
+#producto-info .badge-jordan {
+    background-color: var(--jordan-red);
+    color: var(--jordan-white);
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 0.4rem 0.8rem;
+    border-radius: 50rem;
+    display: inline-block;
+}
+
+#producto-info .sku-tag {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    letter-spacing: 0.5px;
+}
+
+#producto-info .product-title {
+    font-size: 2.4rem;
+    font-weight: 900;
+    letter-spacing: -0.5px;
+    color: var(--jordan-black);
+}
+
+#producto-info .price-tag {
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--jordan-red);
+}
+
+#producto-info .product-description {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: var(--text-secondary);
+}
+
+/* 3. Selector de cantidad y botón CTA */
+#producto-info .quantity-input {
+    max-width: 4.8rem;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-weight: 700;
+}
+
+#producto-info .quantity-input:focus {
+    border-color: var(--jordan-red);
+    box-shadow: 0 0 0 0.2rem rgba(206, 17, 65, 0.15);
+}
+
+#producto-info .btn-reserve {
+    background-color: var(--jordan-black);
+    color: var(--jordan-white);
+    border: none;
+    border-radius: 8px;
+    font-weight: 700;
+    padding: 0.75rem 1.75rem;
+    transition: var(--transition-standard);
+}
+
+#producto-info .btn-reserve:hover {
+    background-color: var(--jordan-red);
+    color: var(--jordan-white);
+    box-shadow: 0 8px 20px rgba(206, 17, 65, 0.3);
+    transform: translateY(-2px);
+}
+
+/* 4. Adaptación responsive a dispositivos móviles */
+@media (max-width: 768px) {
+    #producto-info {
+        padding-top: 2rem !important;
+        padding-bottom: 2rem !important;
+        text-align: center;
+    }
+
+    #producto-info .product-title {
+        font-size: 1.85rem;
+        margin-top: 1rem;
+    }
+
+    #producto-info .product-card-visual {
+        padding: 0.75rem;
+        margin-bottom: 1.5rem;
+    }
+
+    #producto-info .product-card-visual img {
+        max-height: 320px;
+    }
+
+    #producto-info .action-box {
+        justify-content: center;
+    }
+}
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
